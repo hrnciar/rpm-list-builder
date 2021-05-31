@@ -26,7 +26,7 @@ for pkg in pkgs:
 
     patch = f'../{pkg}.patch'
 
-    r(f'fedpkg clone {pkg}')
+    r(f'fedpkg clone {pkg} -- --branch rawhide')
     r(f'cd {pkg}')
     r(f'test -f {patch} && patch -R -p1 < {patch} && rm {patch} '
       f'&& git add {pkg}.spec')
@@ -45,9 +45,7 @@ for pkg in pkgs:
     r(f'fedpkg build --fail-fast --target=f35-python || :')
     r(f'koji regen-repo f35-python --nowait')
     r(f'while ! /usr/bin/koji wait-repo f35-python --build='
-      f'$(rpm --define \'_sourcedir .\'  --define \'fedora 35\' -q '
-      f'--qf "%{{NAME}}-%{{VERSION}}-'
-      f'%{{RELEASE}}\\n" --specfile {pkg}.spec | head -n1); '
+      f'$(fedpkg verrel); '
       f'do sleep 15; done | tee -a ../../wait-times')
     r(f'cd ..')
     r(f'rm -rf {pkg}')
