@@ -1,22 +1,24 @@
 import yaml
 
+AUTHOR = 'Python Maint <python-maint@redhat.com>'
+
 
 def r(cmd):
     print(cmd)
 
 
-with open('../python39.yaml') as f:
-    pkgs = yaml.safe_load(f)['python39']['packages']
+with open('../python310.yaml') as f:
+    pkgs = yaml.safe_load(f)['python310']['packages']
 
 
 for pkg in pkgs:
     macros = {}
     replaced = {}
 
-    chaneglog = 'Rebuilt for Python 3.9'
+    chaneglog = 'Rebuilt for Python 3.10'
     if isinstance(pkg, dict):
         assert len(pkg) == 1
-        chaneglog = 'Bootstrap for Python 3.9'
+        chaneglog = 'Bootstrap for Python 3.10'
         for key, val in pkg.items():
             pkg = key
             macros = val.get('macros', {})
@@ -35,15 +37,15 @@ for pkg in pkgs:
           fr"([^\s]+)/%\1\2{macro}\3{value}/' {pkg}.spec")
     if macros or replaced:
         r(f'git diff > {patch}')
-    r(f'rpmdev-bumpspec -c "{chaneglog}" {pkg}.spec')
-    r(f'git commit -m "{chaneglog}" {pkg}.spec')
+    r(f'rpmdev-bumpspec -c "{chaneglog}" --userstring="{AUTHOR}" {pkg}.spec')
+    r(f'git commit -m "{chaneglog}" --author="{AUTHOR}" {pkg}.spec')
     r(f'git --no-pager show')
     r(f'sleep 3')
     r(f'git push')
-    r(f'fedpkg build --fail-fast --target=f33-python || :')
-    r(f'koji regen-repo f33-python --nowait')
-    r(f'while ! /usr/bin/koji wait-repo f33-python --build='
-      f'$(rpm --define \'_sourcedir .\'  --define \'fedora 33\' -q '
+    r(f'fedpkg build --fail-fast --target=f35-python || :')
+    r(f'koji regen-repo f35-python --nowait')
+    r(f'while ! /usr/bin/koji wait-repo f35-python --build='
+      f'$(rpm --define \'_sourcedir .\'  --define \'fedora 35\' -q '
       f'--qf "%{{NAME}}-%{{VERSION}}-'
       f'%{{RELEASE}}\\n" --specfile {pkg}.spec | head -n1); '
       f'do sleep 15; done | tee -a ../../wait-times')
