@@ -251,7 +251,7 @@ python310:
     #- python-cryptography
     #- python-ptyprocess
     #- python-pexpect
-    #- python-cpunfo
+    #- python-cpuinfo
     #- python-pytest-benchmark
     #- python-sphinx-theme-py3doc-enhanced
     #- python-fields
