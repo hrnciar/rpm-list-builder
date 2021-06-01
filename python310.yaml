@@ -593,7 +593,7 @@ python310:
     #- python-invoke:
     #    macros:
     #      _without_tests: 1
-    #- pytest # testfull rebuild #skipped, blocked by https://bugzilla.redhat.com/show_bug.cgi?id=1948522, https://src.fedoraproject.org/rpms/pytest/pull-request/21
+    #- pytest # testfull rebuild
     #- kernel-tools  # python3-perf
     #- python-jsonschema  # testfull, not checked here
     #- python-txzmq
