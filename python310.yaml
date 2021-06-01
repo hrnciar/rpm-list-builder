@@ -2,39 +2,39 @@ python310:
   packages:
     # bump package version and set macros version to new python
     #- python-rpm-macros
-    ## build python3.9 together with python3.10 without any bcond, verify python3.9 is nonmain python
+    # build python3.9 together with python3.10 without any bcond, verify python3.9 is nonmain python
     #- python3.10:
     #    macros:
     #      _with_bootstrap: 1
     #      _without_rpmwheels: 1
     #      _without_tests: 1
     #      _without_optimizations: 1
-    #- gdb: # not blocking
-    #    macros:
-    #      _without_python: 1
-    #- python-setuptools: # bump release
-    #    macros:
-    #      _with_bootstrap: 1
-    #      _without_tests: 1
-    #- pyparsing: # bump release
-    #    macros:
-    #      _with_bootstrap: 1
-    #- python-packaging: # bump release
-    #    macros:
-    #      _with_bootstrap: 1
-    #      _without_tests: 1
-    #      _without_docs: 1
-    #- python-wheel: # bump release
-    #    macros:
-    #      _with_bootstrap: 1
-    #- python-pip:
-    #    macros:
-    #      _without_tests: 1
-    #      _without_doc: 1
-    #- python-setuptools:
-    #    macros:
-    #      _without_tests: 1
-    #- python3.10 # wait for gdb
+    - gdb: # not blocking
+        macros:
+          _without_python: 1
+    - python-setuptools: # bump release
+        macros:
+          _with_bootstrap: 1
+          _without_tests: 1
+    - pyparsing: # bump release
+        macros:
+          _with_bootstrap: 1
+    - python-packaging: # bump release
+        macros:
+          _with_bootstrap: 1
+          _without_tests: 1
+          _without_docs: 1
+    - python-wheel: # bump release
+        macros:
+          _with_bootstrap: 1
+    - python-pip:
+        macros:
+          _without_tests: 1
+          _without_doc: 1
+    - python-setuptools:
+        macros:
+          _without_tests: 1
+    - python3.10 # wait for gdb
 
     # blocking point. do not jump ahead, or the pkgs won't have automatic requires (not even on python(abi))
     # DELETE the first python3.10 build if the second is not bumped
