@@ -154,11 +154,11 @@ python310:
     #     _with_bootstrap: 1
     #- python-imagesize
     #- python-docutils
-    - python-jinja2:
-        macros:
-          _without_docs: 1
-    - python-process-tests
-    - python-pretend
+    #- python-jinja2:
+    #    macros:
+    #      _without_docs: 1
+    #- python-process-tests
+    #- python-pretend
     - python-sphinx_rtd_theme: # bump release
         macros:
           _with_bootstrap: 1
@@ -170,19 +170,19 @@ python310:
     - python-requests:
         macros:
           _without_tests: 1
-    - python-sphinxcontrib-applehelp:
+    - python-sphinxcontrib-applehelp:  # not blocking until sphinx
         macros:
           _without_check: 1
-    - python-sphinxcontrib-devhelp:
+    - python-sphinxcontrib-devhelp:  # not blocking until sphinx
         macros:
           _without_check: 1
-    - python-sphinxcontrib-htmlhelp:
+    - python-sphinxcontrib-htmlhelp:  # not blocking until sphinx
         macros:
           _without_check: 1
-    - python-sphinxcontrib-jsmath:
+    - python-sphinxcontrib-jsmath:  # not blocking until sphinx
         macros:
           _without_check: 1
-    - python-sphinxcontrib-qthelp:
+    - python-sphinxcontrib-qthelp:  # not blocking until sphinx
         macros:
           _without_check: 1
     - python-sphinxcontrib-serializinghtml:
