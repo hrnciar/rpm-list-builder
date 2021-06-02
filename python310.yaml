@@ -147,7 +147,7 @@ python310:
     - python-click
     - python-mock
     - python-chardet
-    - python-pluggy
+    - python-pluggy  # not blocking
     - pytz
     - babel: # bump release
         macros:
