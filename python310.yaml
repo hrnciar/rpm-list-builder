@@ -110,14 +110,10 @@ python310:
           _without_tests: 1
     - python-distlib
     - python-appdirs
-    #- python-virtualenv:  #  No matching package to install: 'python-wheel-wheel'
-    #    macros:
-    #      _without_tests: 1
     - Cython:
         macros:
           _without_tests: 1
     - python-lxml
-    - python-xmlschema
     - python-colorama
     - python-more-itertools:
         macros:
@@ -144,6 +140,10 @@ python310:
           _without_tests: 1
           _without_docs: 1
     - python-wheel
+    - python-virtualenv:
+        macros:
+          _without_tests: 1
+    - python-xmlschema
     - python-click
     - python-mock
     - python-chardet
