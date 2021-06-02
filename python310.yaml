@@ -44,189 +44,186 @@ python310:
     # eg. Provides: dblatex = 0.3.12-2.fc35 python3.10dist(dblatex) = 0.3.12 python3dist(dblatex) = 0.3.12
 
     #- dblatex
-    #- python-six:
+    - python-six:
+        macros:
+          _without_tests: 1
+    - python-toml:
+        macros:
+          _without_tests: 1
+    - python-setuptools_scm:
+        macros:
+          _without_tests: 1
+    - python-py:
+        macros:
+          _without_tests: 1
+          _without_docs: 1
+    - python-iniparse
+    - python-chardet:
+        macros:
+          _without_tests: 1
+    - python-pbr:
+        macros:
+          _with_bootstrap: 1
+    - python-mock:
+        macros:
+          _without_tests: 1
+    - python-mimeparse
+    - python-extras:
+        macros:
+          _without_check: 1
+    - python-coverage
+    - python-nose
+    - python-attrs:
+        macros:
+          _without_tests: 1
+    - python-pluggy:
+        macros:
+          _without_tests: 1
+    - python-sortedcontainers:
+        macros:
+          _without_tests: 1
+          _without_docs: 1
+    - python-hypothesis:
+        macros:
+          _without_tests: 1
+          _without_doc: 1
+    - python-decorator
+    - python-markupsafe
+    - python-pysocks:
+        replaced_macros:
+         with_python3_tests: 0
+    - python-pygments:
+       macros:
+          _without_docs: 1
+          _without_tests: 1
+    - python-snowballstemmer
+    - python-tox
+    - python-tox-current-env
+    - python-filelock:
+        macros:
+          _without_docs: 1
+    - python-elementpath:  # not blocking
+        macros:
+          _without_tests: 1
+    - python-iniconfig:
+        macros:
+          _without_tests: 1
+    - python-distlib
+    - python-appdirs
+    - python-virtualenv:
+        macros:
+          _without_tests: 1
+    - Cython:
+        macros:
+          _without_tests: 1
+    - python-lxml
+    - python-xmlschema
+    - python-colorama
+    - python-more-itertools:
+        macros:
+         _without_tests: 1
+    - python-atomicwrites:
+        macros:
+          _without_docs: 1
+          _without_tests: 1
+    - python-testtools:
+        macros:
+         _without_tests: 1
+         _without_docs: 1
+    - python-fixtures:
+        macros:
+          _without_tests: 1
+    - python-testscenarios
+    - python-fixtures  # with tests FAILED https://bugzilla.redhat.com/show_bug.cgi?id=1787753
+    - python-wcwidth:
+        macros:
+          _without_tests: 1
+    - pytest:
+        macros:
+          _without_timeout: 1
+          _without_tests: 1
+          _without_docs: 1
+    - python-click
+    - python-wheel
+    - python-mock
+    - python-chardet
+    - python-pluggy
+    - pytz
+    - babel: # bump release
+        macros:
+         _with_bootstrap: 1
+    - python-imagesize
+    - python-docutils
+    - python-jinja2:
+        macros:
+          _without_docs: 1
+    - python-process-tests
+    - python-pretend
+    - python-sphinx_rtd_theme: # bump release
+        macros:
+          _with_bootstrap: 1
+    - python-sphinx-theme-alabaster
+    - python-idna
+    - python-urllib3:
+        macros:
+          _without_tests: 1
+    - python-requests:
+        macros:
+          _without_tests: 1
+    - python-sphinxcontrib-applehelp:
+        macros:
+          _without_check: 1
+    - python-sphinxcontrib-devhelp:
+        macros:
+          _without_check: 1
+    - python-sphinxcontrib-htmlhelp:
+        macros:
+          _without_check: 1
+    - python-sphinxcontrib-jsmath:
+        macros:
+          _without_check: 1
+    - python-sphinxcontrib-qthelp:
+        macros:
+          _without_check: 1
+    - python-sphinxcontrib-serializinghtml:
+        macros:
+          _without_check: 1
+    - python-sphinx:
+        macros:
+          _without_websupport: 1
+          _without_tests: 1
+    - pyparsing
+    - python-whoosh
+    - python-sphinxcontrib-trio
+    - python-atomicwrites # docsfull and testfull, not blocking
+    - python-pygments # docsfull, testfull, not blocking
+    - python-nose-cov
+    - python-cov-core
+    - python-nose2 # local patch
+    - python-parameterized
+    # double commented to keep it out of koji,
+    # but preserve it here for the future
+    #- pyxattr:
     #    macros:
-    #      _without_tests: 1
-    #- python-toml:
-    #    macros:
-    #      _without_tests: 1
-    #- python-setuptools_scm:
-    #    macros:
-    #      _without_tests: 1
-    #- python-py:
-    #    macros:
-    #      _without_tests: 1
-    #      _without_docs: 1
-    #- python-iniparse
-    #- python-chardet:
-    #    macros:
-    #      _without_tests: 1
-    #- python-pbr:
-    #    macros:
-    #      _with_bootstrap: 1
-    #- python-mock:
-    #    macros:
-    #      _without_tests: 1
-    #- python-mimeparse
-    #- python-extras:
-    #    macros:
-    #      _without_check: 1
-    #- python-coverage
-    #- python-nose
-    #- python-attrs:
-    #    macros:
-    #      _without_tests: 1
-    #- python-pluggy:
-    #    macros:
-    #      _without_tests: 1
-    #- python-sortedcontainers:
-    #    macros:
-    #      _without_tests: 1
-    #      _without_docs: 1
-    #- python-hypothesis:
-    #    macros:
-    #      _without_tests: 1
-    #      _without_doc: 1
-    #- python-decorator
-    #- python-markupsafe
-    #- python-pysocks:
-    #    replaced_macros:
-    #     with_python3_tests: 0
-    #- python-pygments:
-    #   macros:
-    #      _without_docs: 1
-    #      _without_tests: 1
-    #- python-snowballstemmer
-    #- python-tox
-    #- python-tox-current-env
-    #- python-filelock: # https://src.fedoraproject.org/rpms/python-filelock/pull-request/2
-    #    macros:
-    #      _without_docs: 1
-    #- python-elementpath:  # not blocking
-    #    macros:
-    #      _without_tests: 1
-    #- python-iniconfig:
-    #    macros:
-    #      _without_tests: 1
-    #- python-distlib
-    #- python-appdirs
-    #- python-virtualenv:
-    #    macros:
-    #      _without_tests: 1
-    #- Cython:
-    #    macros:
-    #      _without_tests: 1
-    #- python-lxml
-    #- python-xmlschema
-    #- python-colorama
-    #- python-more-itertools:
-    #    macros:
-    #     _without_tests: 1
-    #- python-atomicwrites:
-    #    macros:
-    #      _without_docs: 1
-    #      _without_tests: 1
-    #- python-testtools:
-    #    macros:
-    #     _without_tests: 1
-    #     _without_docs: 1
-    #- python-fixtures:
-    #    macros:
-    #      _without_tests: 1
-    #- python-testscenarios
-    #- python-fixtures  # with tests FAILED https://bugzilla.redhat.com/show_bug.cgi?id=1787753
-    #- python-wcwidth:
-    #    macros:
-    #      _without_tests: 1
-    #- pytest: # https://src.fedoraproject.org/rpms/pytest/pull-request/21
-    #    macros:
-    #      _without_timeout: 1
-    #      _without_tests: 1
-    #      _without_docs: 1
-    #- python-click
-    #- python-wheel
-    #- python-mock
-    #- python-chardet
-    #- python-pluggy
-    #- pytz
-    #- babel: # bump release
-    #    macros:
-    #     _with_bootstrap: 1
-    #- python-imagesize
-    #- python-docutils
-    #- python-jinja2:
-    #    macros:
-    #      _without_docs: 1
-    #- python-process-tests
-    #- python-pretend
-    #- python-sphinx_rtd_theme: # bump release
-    #    macros:
-    #      _with_bootstrap: 1
-    #- python-sphinx-theme-alabaster
-    #- python-idna
-    #- python-urllib3:
-    #    macros:
-    #      _without_tests: 1
-    #- python-requests:
-    #    macros:
-    #      _without_tests: 1
-    #- python-sphinxcontrib-applehelp:
-    #    macros:
-    #      _without_check: 1
-    #- python-sphinxcontrib-devhelp:
-    #    macros:
-    #      _without_check: 1
-    #- python-sphinxcontrib-htmlhelp:
-    #    macros:
-    #      _without_check: 1
-    #- python-sphinxcontrib-jsmath:
-    #    macros:
-    #      _without_check: 1
-    #- python-sphinxcontrib-qthelp:
-    #    macros:
-    #      _without_check: 1
-    #- python-sphinxcontrib-serializinghtml:
-    #    macros:
-    #      _without_check: 1
-    #- python-sphinx:
-    #    macros:
-    #      _without_websupport: 1
-    #      _without_tests: 1
-    #- pyparsing
-    #- python-whoosh
-    #- python-sphinxcontrib-trio
-    #- python-atomicwrites # docsfull and testfull, not blocking
-    #- python-pygments # docsfull, testfull, not blocking
-    #- python-testtools: # docsfull and testfull, not blocking
-    #    macros:
-    #      _without_tests: 1
-    #- python-nose-cov
-    #- python-cov-core
-    #- python-nose2 # local patch
-    #- python-parameterized
-    ## double commented to keep it out of koji,
-    ## but preserve it here for the future
-    ##- pyxattr:
-    ##    macros:
-    ##      _without_tests: 1 # this bcond is not in dist git
-    #- pyxattr  # tests fail in copr (Operation not supported), commented out
-    #- python-mako
-    #- python-pytest-runner
-    #- python-parso
-    #- python-jedi:
-    #    macros:
-    #      _without_tests: 1
-    #- PyYAML
-    #- python-tidy
-    #- python-markdown
-    #- python-anytree
-    #- asciidoc
-    #- python-more-itertools
-    #- automake
-    #- rpm
-    #- unbound
-    #- pycairo
-    #- Cython  # testfull, not blocking (SKIPed)
+    #      _without_tests: 1 # this bcond is not in dist git
+    - pyxattr  # tests fail in copr (Operation not supported), commented out
+    - python-mako
+    - python-pytest-runner
+    - python-parso
+    - python-jedi:
+        macros:
+          _without_tests: 1
+    - PyYAML
+    - python-tidy
+    - python-markdown
+    - python-anytree
+    - asciidoc
+    - python-more-itertools
+    - automake
+    - rpm
+    - unbound
+    - pycairo
+    - Cython  # testfull, not blocking (SKIPed)
 
     #- python-dateutil:
     #    macros:
