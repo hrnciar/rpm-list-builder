@@ -1,0 +1,27 @@
+diff --git a/python-execnet.spec b/python-execnet.spec
+index 88ef028..bb2e7e6 100644
+--- a/python-execnet.spec
++++ b/python-execnet.spec
+@@ -35,9 +35,9 @@ BuildRequires:  python3-setuptools
+ BuildRequires:  python3-setuptools_scm
+ BuildRequires:  python3-apipkg
+ BuildRequires:  python3-pytest
+-BuildRequires:  python3-eventlet
+-BuildRequires:  python3-gevent
+-BuildRequires:  python3-pytest-timeout
++#BuildRequires:  python3-eventlet -- not yet ready for Python 3.10
++#BuildRequires:  python3-gevent -- not yet ready for Python 3.10
++#BuildRequires:  python3-pytest-timeout -- not yet ready for Python 3.10
+ BuildRequires:  %{_bindir}/sphinx-build-3
+ %{?python_provide:%python_provide python3-%{srcname}}
+ 
+@@ -81,8 +81,7 @@ PYTEST_SELECT+=' and not [python2.7]'
+ PYTHONPATH=$(pwd) \
+ py.test-%{python3_version} -r s \
+   -k "$PYTEST_SELECT" \
+-  testing \
+-  --timeout=30
++  testing
+ 
+ 
+ %files -n python3-%{srcname}

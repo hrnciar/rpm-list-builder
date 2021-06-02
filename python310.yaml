@@ -232,12 +232,12 @@ python310:
     #- python-itsdangerous
     #- python-iso8601
     #- python-pytest-subtests
-    - python-semantic_version
-    - rust-packaging
-    - python-tqdm
-    - python-setuptools-rust
-    - python-apipkg
-    - python-execnet
+    #- python-semantic_version
+    #- rust-packaging
+    #- python-tqdm
+    #- python-setuptools-rust
+    #- python-apipkg
+    - python-execnet  # remove BR for eventlet, gevent, pytest-timeout (also --timeout)
     - python-pytest-forked
     - python-psutil
     - python-pytest-xdist
