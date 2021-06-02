@@ -64,89 +64,89 @@ python310:
     #- python-pbr:
     #    macros:
     #      _with_bootstrap: 1
-    - python-mock:
-        macros:
-          _without_tests: 1
-    - python-mimeparse
-    - python-extras:
-        macros:
-          _without_check: 1
-    - python-coverage
-    - python-nose
-    - python-attrs:
-        macros:
-          _without_tests: 1
-    - python-pluggy:
-        macros:
-          _without_tests: 1
-    - python-sortedcontainers:
-        macros:
-          _without_tests: 1
-          _without_docs: 1
-    - python-hypothesis:
-        macros:
-          _without_tests: 1
-          _without_doc: 1
-    - python-decorator
-    - python-markupsafe
-    - python-pysocks:
-        replaced_macros:
-         with_python3_tests: 0
-    - python-pygments:
-       macros:
-          _without_docs: 1
-          _without_tests: 1
-    - python-snowballstemmer
-    - python-tox
-    - python-tox-current-env
-    - python-filelock:
-        macros:
-          _without_docs: 1
-    - python-elementpath:  # not blocking
-        macros:
-          _without_tests: 1
-    - python-iniconfig:
-        macros:
-          _without_tests: 1
-    - python-distlib
-    - python-appdirs
-    - Cython:
-        macros:
-          _without_tests: 1
-    - python-lxml
-    - python-colorama
-    - python-more-itertools:
-        macros:
-         _without_tests: 1
-    - python-atomicwrites:
-        macros:
-          _without_docs: 1
-          _without_tests: 1
-    - python-testtools:
-        macros:
-         _without_tests: 1
-         _without_docs: 1
-    - python-fixtures:
-        macros:
-          _without_tests: 1
-    - python-testscenarios
-    - python-fixtures  # with tests FAILED https://bugzilla.redhat.com/show_bug.cgi?id=1787753
-    - python-wcwidth:
-        macros:
-          _without_tests: 1
-    - pytest:
-        macros:
-          _without_timeout: 1
-          _without_tests: 1
-          _without_docs: 1
-    - python-wheel
-    - python-virtualenv:
-        macros:
-          _without_tests: 1
+    #- python-mock:
+    #    macros:
+    #      _without_tests: 1
+    #- python-mimeparse
+    #- python-extras:
+    #    macros:
+    #      _without_check: 1
+    #- python-coverage
+    #- python-nose
+    #- python-attrs:
+    #    macros:
+    #      _without_tests: 1
+    #- python-pluggy:
+    #    macros:
+    #      _without_tests: 1
+    #- python-sortedcontainers:
+    #    macros:
+    #      _without_tests: 1
+    #      _without_docs: 1
+    #- python-hypothesis:
+    #    macros:
+    #      _without_tests: 1
+    #      _without_doc: 1
+    #- python-decorator
+    #- python-markupsafe
+    #- python-pysocks:
+    #    replaced_macros:
+    #     with_python3_tests: 0
+    #- python-pygments:
+    #   macros:
+    #      _without_docs: 1
+    #      _without_tests: 1
+    #- python-snowballstemmer
+    #- python-tox
+    #- python-tox-current-env
+    #- python-filelock:
+    #    macros:
+    #      _without_docs: 1
+    #- python-elementpath:  # not blocking
+    #    macros:
+    #      _without_tests: 1
+    #- python-iniconfig:
+    #    macros:
+    #      _without_tests: 1
+    #- python-distlib
+    #- python-appdirs
+    #- Cython:
+    #    macros:
+    #      _without_tests: 1
+    #- python-lxml
+    #- python-colorama
+    #- python-more-itertools:
+    #    macros:
+    #     _without_tests: 1
+    #- python-atomicwrites:
+    #    macros:
+    #      _without_docs: 1
+    #      _without_tests: 1
+    #- python-testtools:
+    #    macros:
+    #     _without_tests: 1
+    #     _without_docs: 1
+    #- python-fixtures:
+    #    macros:
+    #      _without_tests: 1
+    #- python-testscenarios
+    #- python-fixtures  # with tests FAILED https://bugzilla.redhat.com/show_bug.cgi?id=1787753
+    #- python-wcwidth:
+    #    macros:
+    #      _without_tests: 1
+    #- pytest:
+    #    macros:
+    #      _without_timeout: 1
+    #      _without_tests: 1
+    #      _without_docs: 1
+    #- python-wheel
+    #- python-virtualenv:
+    #    macros:
+    #      _without_tests: 1
     - python-xmlschema
     - python-click
-    - python-mock
-    - python-chardet
+    - python-mock  # not blocking
+    - python-chardet  # not blocking
     - python-pluggy  # not blocking
     - pytz
     - babel: # bump release
@@ -659,7 +659,7 @@ python310:
     #- pybind11:
     #    macros:
     #      _without_tests: 1
-    #- scipy
+    #- scipy  # https://bugzilla.redhat.com/show_bug.cgi?id=1959353
     #- python-sphinx-gallery
     #- python-jupyterlab_pygments
     #- python-nbconvert:
