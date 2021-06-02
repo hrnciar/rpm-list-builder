@@ -428,7 +428,7 @@ python310:
     #- glade
     #- python-requests-kerberos
     #- python-tzlocal
-    #- python-ephem #disabled failing test https://pastebin.com/BeC5mFbh
+    #- python-ephem
     #- python-convertdate
     #- python-dateparser
     #- python-arrow
@@ -503,7 +503,7 @@ python310:
 
     #- python-httplib2
     #- python-typing-extensions
-    #- python-yarl # disabled failing test https://pastebin.com/5ivfgsXz
+    #- python-yarl
     #- python-hupper
     #- subunit
     #- python-testrepository
@@ -533,14 +533,14 @@ python310:
     #- python-curio
     #- python-sniffio
     #- python-greenlet
-    #- python-dogpile-cache # removed failing tests https://pastebin.com/ziMPgSPv
-    #- python-requests-toolbelt # removed failing tests https://pastebin.com/c6UtQFnP
+    #- python-dogpile-cache
+    #- python-requests-toolbelt
     #- python-trustme
     #- python-trio:
     #    macros:
     #      _without_tests: 1
-    #- python-dns # without tests
-    #- python-httpretty # we need to build httpretty with this PR to avoid a dependency on python-eventlet - https://src.fedoraproject.org/rpms/python-httpretty/pull-request/12
+    #- python-dns
+    #- python-httpretty
     #- python-boto
     #- python-mypy_extensions
     #- python3-mypy
@@ -583,7 +583,7 @@ python310:
     #- python-towncrier  # testfull rebuild, untested here
     #- python-Automat  # testfull rebuild
     #- python-pygments-pytest
-    #- python-attrs  # testfull rebuild, not blocking, disabled failing tests
+    #- python-attrs  # testfull rebuild, not blocking (fails)
     #- python-invoke:
     #    macros:
     #      _without_tests: 1
@@ -795,6 +795,17 @@ python310:
     #- python3-docs # updated! no need to bump
     #- python-testtools
 
+    # Don't forget to rebuild this later
+    #- python-nbconvert  # not blocking #skipped
+    #- python-cherrypy # testfull skipped
+    #- xapian-bindings
+    #- python-sphinxcontrib-websupport #with tests
+    #- python-pyquery  # testfull rebuild after webtest, skipped, fails due to new version of libxml2
+    #- python-hypothesis  # testfull, not blocking #skipped
+    #- bodhi #skipped
+    #- fedpkg  # not blocking #skipped
+    #- python-virtualenv  # with tests, remove xonsh
+
     # additional bootstrap loops (isolated):
 
     #- python-zbase32:
@@ -816,20 +827,6 @@ python310:
     #- python-lit
     #- marshalparser
     #- clang
-
-    #- python-werkzeug #with tests
-    #- python-dns #with tests
-    
-    # Don't forget to rebuild this later
-    #- python-nbconvert  # not blocking #skipped
-    #- python-cherrypy # testfull skipped
-    #- xapian-bindings
-    #- python-sphinxcontrib-websupport #with tests
-    #- python-pyquery  # testfull rebuild after webtest, skipped, fails due to new version of libxml2
-    #- python-hypothesis  # testfull, not blocking #skipped
-    #- bodhi #skipped
-    #- fedpkg  # not blocking #skipped
-    #- python-virtualenv  # with tests, remove xonsh
 
     #- python-pypandoc
     #- python-pcodedmp:
