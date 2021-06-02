@@ -143,8 +143,8 @@ python310:
           _without_timeout: 1
           _without_tests: 1
           _without_docs: 1
-    - python-click
     - python-wheel
+    - python-click
     - python-mock
     - python-chardet
     - python-pluggy
