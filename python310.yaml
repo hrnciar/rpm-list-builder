@@ -44,26 +44,26 @@ python310:
     # eg. Provides: dblatex = 0.3.12-2.fc35 python3.10dist(dblatex) = 0.3.12 python3dist(dblatex) = 0.3.12
 
     #- dblatex
-    - python-six:
-        macros:
-          _without_tests: 1
-    - python-toml:
-        macros:
-          _without_tests: 1
-    - python-setuptools_scm:
-        macros:
-          _without_tests: 1
-    - python-py:
-        macros:
-          _without_tests: 1
-          _without_docs: 1
-    - python-iniparse
-    - python-chardet:
-        macros:
-          _without_tests: 1
-    - python-pbr:
-        macros:
-          _with_bootstrap: 1
+    #- python-six:
+    #    macros:
+    #      _without_tests: 1
+    #- python-toml:
+    #    macros:
+    #      _without_tests: 1
+    #- python-setuptools_scm:
+    #    macros:
+    #      _without_tests: 1
+    #- python-py:
+    #    macros:
+    #      _without_tests: 1
+    #      _without_docs: 1
+    #- python-iniparse
+    #- python-chardet:
+    #    macros:
+    #      _without_tests: 1
+    #- python-pbr:
+    #    macros:
+    #      _with_bootstrap: 1
     - python-mock:
         macros:
           _without_tests: 1
