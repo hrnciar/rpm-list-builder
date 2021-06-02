@@ -45,7 +45,9 @@ for pkg in pkgs:
     r(f'fedpkg build --fail-fast --target=f35-python || :')
     r(f'koji regen-repo f35-python --nowait')
     r(f'while ! /usr/bin/koji wait-repo f35-python --build='
-      f'$(fedpkg verrel); '
+      f'$(rpm --define \'_sourcedir .\'  --define \'fedora 35\' -q '
+      f'--qf "%{{NAME}}-%{{VERSION}}-'
+      f'%{{RELEASE}}\\n" --specfile {pkg}.spec | head -n1); '
       f'do sleep 15; done | tee -a ../../wait-times')
     r(f'cd ..')
     r(f'rm -rf {pkg}')
