@@ -259,7 +259,7 @@ python310:
     #- python-sphinx-issues
     #- python-Pallets-Sphinx-Themes
     #- python-sphinxcontrib-log-cabinet
-    #- python-werkzeug #without tests
+    #- python-werkzeug
     #- python-flask
     #- gpgme
     #- librepo
@@ -314,8 +314,8 @@ python310:
     #      _without_tests: 1
     #- python-genshi
     #- python-html5lib
-    #- python-sphinx
-    #- python-sphinxcontrib-applehelp # all of those are not blocking:
+    #- python-sphinx # all of those are not blocking:
+    #- python-sphinxcontrib-applehelp
     #- python-sphinxcontrib-devhelp
     #- python-sphinxcontrib-htmlhelp
     #- python-sphinxcontrib-jsmath
