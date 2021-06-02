@@ -795,7 +795,7 @@ python310:
     #- python-ipykernel
     #- python-Bottleneck
     #- python-docs-theme
-    #- python3-docs #(updated!)
+    #- python3-docs # updated! no need to bump
     #- python-testtools
 
     # additional bootstrap loops (isolated):
