@@ -237,17 +237,17 @@ python310:
     #- python-tqdm
     #- python-setuptools-rust
     #- python-apipkg
-    - python-execnet  # remove BR for eventlet, gevent, pytest-timeout (also --timeout)
-    - python-pytest-forked
-    - python-psutil
-    - python-pytest-xdist
-    - python-ply
-    - python-pycparser
-    - python-cffi
-    - python-cryptography
-    - python-ptyprocess
-    - python-pexpect
-    - python-cpuinfo
+    #- python-execnet  # remove BR for eventlet, gevent, pytest-timeout (also --timeout)
+    #- python-pytest-forked
+    #- python-psutil
+    #- python-pytest-xdist
+    #- python-ply
+    #- python-pycparser
+    #- python-cffi
+    #- python-cryptography
+    #- python-ptyprocess
+    #- python-pexpect
+    #- python-cpuinfo
     - python-pytest-benchmark
     - python-sphinx-theme-py3doc-enhanced
     - python-fields
