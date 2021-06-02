@@ -219,7 +219,6 @@ python310:
     - python-anytree
     - asciidoc
     - python-more-itertools
-    - automake
     - rpm
     - unbound
     - pycairo
@@ -426,7 +425,6 @@ python310:
     #- dnf
     #- dnf-plugins-core
     #- libxml2
-    #- itstool
     #- glade
     #- python-requests-kerberos
     #- python-tzlocal
@@ -501,7 +499,6 @@ python310:
     #- abrt
     #- python-paste
     #- python-plaster-pastedeploy
-    #- rpmlint
     #- createrepo_c
 
     #- python-httplib2
