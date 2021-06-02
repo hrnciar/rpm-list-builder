@@ -224,116 +224,116 @@ python310:
     - pycairo
     - Cython  # testfull, not blocking (SKIPed)
 
-    #- python-dateutil:
-    #    macros:
-    #      _without_tests: 1
-    #- python-sure
-    #- python-freezegun
-    #- python-itsdangerous
-    #- python-iso8601
-    #- python-pytest-subtests
-    #- python-semantic_version
-    #- rust-packaging
-    #- python-tqdm
-    #- python-setuptools-rust
-    #- python-apipkg
-    #- python-execnet
-    #- python-pytest-forked
-    #- python-psutil
-    #- python-pytest-xdist
-    #- python-ply
-    #- python-pycparser
-    #- python-cffi
-    #- python-cryptography
-    #- python-ptyprocess
-    #- python-pexpect
-    #- python-cpuinfo
-    #- python-pytest-benchmark
-    #- python-sphinx-theme-py3doc-enhanced
-    #- python-fields
-    #- python-pytest-cov
-    #- python-pytest-timeout
-    #- python-greenlet
-    #- python-waitress
-    #- python-requests-unixsocket
-    #- python-sphinx-issues
-    #- python-Pallets-Sphinx-Themes
-    #- python-sphinxcontrib-log-cabinet
-    #- python-werkzeug
-    #- python-flask
-    #- gpgme
-    #- librepo
-    #- libdnf  # python3-hawkey
-    #- libcomps
+    - python-dateutil:
+        macros:
+          _without_tests: 1
+    - python-sure
+    - python-freezegun
+    - python-itsdangerous
+    - python-iso8601
+    - python-pytest-subtests
+    - python-semantic_version
+    - rust-packaging
+    - python-tqdm
+    - python-setuptools-rust
+    - python-apipkg
+    - python-execnet
+    - python-pytest-forked
+    - python-psutil
+    - python-pytest-xdist
+    - python-ply
+    - python-pycparser
+    - python-cffi
+    - python-cryptography
+    - python-ptyprocess
+    - python-pexpect
+    - python-cpuinfo
+    - python-pytest-benchmark
+    - python-sphinx-theme-py3doc-enhanced
+    - python-fields
+    - python-pytest-cov
+    - python-pytest-timeout
+    - python-greenlet
+    - python-waitress
+    - python-requests-unixsocket
+    - python-sphinx-issues
+    - python-Pallets-Sphinx-Themes
+    - python-sphinxcontrib-log-cabinet
+    - python-werkzeug
+    - python-flask
+    - gpgme
+    - librepo
+    - libdnf  # python3-hawkey
+    - libcomps
 
-    #- meson  # check disabled by default, if not, without check build needed before pygobject3
-    #- babel # not blocking
-    #- python-dateutil # not blocking
-    #- python-configobj
-    #- python-bottle
-    #- python-tornado
-    #- python-jsonpointer
-    #- python-jsonpatch
-    #- python-jsonschema:
-    #    macros:
-    #      _without_tests: 1
-    #- ninja-build
-    #- gobject-introspection
-    #- pygobject3
-    #- python-pycurl
+    - meson  # check disabled by default, if not, without check build needed before pygobject3
+    - babel # not blocking
+    - python-dateutil # not blocking
+    - python-configobj
+    - python-bottle
+    - python-tornado
+    - python-jsonpointer
+    - python-jsonpatch
+    - python-jsonschema:
+        macros:
+          _without_tests: 1
+    - ninja-build
+    - gobject-introspection
+    - pygobject3
+    - python-pycurl
 
-    #- python-blinker
-    #- python-asn1crypto
-    #- python-prettytable
-    #- pyserial
-    #- libselinux
-    #- policycoreutils
-    #- pykickstart
-    #- python-pyudev
-    #- libbytesize
-    #- python-blivet
-    #- python-requests-ftp
-    #- libpwquality
-    #- python-pydbus
-    #- python-ntplib
-    #- python-wrapt
-    #- python-lazy-object-proxy
-    #- python-webencodings
-    #- python-ordered-set
-    #- python-requests-file
-    #- python-pid
-    #- python-polib
-    #- python-argcomplete
-    #- python-u-msgpack-python
-    #- python-pytest-expect
-    #- python-sqlalchemy:
-    #    macros:
-    #      _without_xdist: 1
-    #- python-sphinxcontrib-websupport:
-    #    macros:
-    #      _without_tests: 1
-    #- python-genshi
-    #- python-html5lib
-    #- python-sphinx # all of those are not blocking:
-    #- python-sphinxcontrib-applehelp
-    #- python-sphinxcontrib-devhelp
-    #- python-sphinxcontrib-htmlhelp
-    #- python-sphinxcontrib-jsmath
-    #- python-sphinxcontrib-qthelp
-    #- python-sphinxcontrib-serializinghtml
-    #- python-sphinxcontrib-httpdomain # to here
-    #- python-jwt
-    #- python-oauthlib
-    #- pyparted
-    #- libblockdev
-    #- python-systemd
+    - python-blinker
+    - python-asn1crypto
+    - python-prettytable
+    - pyserial
+    - libselinux
+    - policycoreutils
+    - pykickstart
+    - python-pyudev
+    - libbytesize
+    - python-blivet
+    - python-requests-ftp
+    - libpwquality
+    - python-pydbus
+    - python-ntplib
+    - python-wrapt
+    - python-lazy-object-proxy
+    - python-webencodings
+    - python-ordered-set
+    - python-requests-file
+    - python-pid
+    - python-polib
+    - python-argcomplete
+    - python-u-msgpack-python
+    - python-pytest-expect
+    - python-sqlalchemy:
+        macros:
+          _without_xdist: 1
+    - python-sphinxcontrib-websupport:
+        macros:
+          _without_tests: 1
+    - python-genshi
+    - python-html5lib
+    - python-sphinx # all of those are not blocking:
+    - python-sphinxcontrib-applehelp
+    - python-sphinxcontrib-devhelp
+    - python-sphinxcontrib-htmlhelp
+    - python-sphinxcontrib-jsmath
+    - python-sphinxcontrib-qthelp
+    - python-sphinxcontrib-serializinghtml
+    - python-sphinxcontrib-httpdomain # to here
+    - python-jwt
+    - python-oauthlib
+    - pyparted
+    - libblockdev
+    - python-systemd
 
-    ## docs rebuilds, not blocking:
-    #- python-packaging
+    # docs rebuilds, not blocking:
+    - python-packaging
 
-    ## testfull rebuilds, not blocking:
-    #- python-py
-    #- python-six
+    # testfull rebuilds, not blocking:
+    - python-py
+    - python-six
 
     #- python-redis
     #- python-bcrypt
