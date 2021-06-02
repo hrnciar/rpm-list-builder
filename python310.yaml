@@ -110,9 +110,9 @@ python310:
           _without_tests: 1
     - python-distlib
     - python-appdirs
-    - python-virtualenv:
-        macros:
-          _without_tests: 1
+    #- python-virtualenv:  #  No matching package to install: 'python-wheel-wheel'
+    #    macros:
+    #      _without_tests: 1
     - Cython:
         macros:
           _without_tests: 1
