@@ -199,7 +199,7 @@ python310:
     - python-pygments # docsfull, testfull, not blocking
     - python-nose-cov
     - python-cov-core
-    - python-nose2 # local patch
+    - python-nose2
     - python-parameterized
     # double commented to keep it out of koji,
     # but preserve it here for the future
