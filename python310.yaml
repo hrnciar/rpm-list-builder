@@ -209,25 +209,25 @@ python310:
     #- pyxattr  # tests fail in copr (Operation not supported), commented out
     #- python-mako
     #- python-pytest-runner
-    - python-parso
-    - python-jedi:
-        macros:
-          _without_tests: 1
-    - PyYAML
-    - python-tidy
-    - python-markdown
-    - python-anytree
-    - asciidoc
-    - python-more-itertools
-    - rpm
-    - unbound
-    - pycairo
-    - Cython  # testfull, not blocking (SKIPed)
+    #- python-parso
+    #- python-jedi:
+    #    macros:
+    #      _without_tests: 1
+    #- PyYAML
+    #- python-tidy
+    #- python-markdown
+    #- python-anytree
+    #- asciidoc
+    #- python-more-itertools
+    #- rpm
+    #- unbound
+    #- pycairo
+    #- Cython  # testfull, not blocking (SKIPed)
 
-    - python-dateutil:
-        macros:
-          _without_tests: 1
-    - python-sure
+    #- python-dateutil:
+    #    macros:
+    #      _without_tests: 1
+    #- python-sure
     - python-freezegun
     - python-itsdangerous
     - python-iso8601
