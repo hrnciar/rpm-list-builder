@@ -143,17 +143,17 @@ python310:
     #- python-virtualenv:
     #    macros:
     #      _without_tests: 1
-    - python-xmlschema
-    - python-click
-    - python-mock  # not blocking
-    - python-chardet  # not blocking
-    - python-pluggy  # not blocking
-    - pytz
-    - babel: # bump release
-        macros:
-         _with_bootstrap: 1
-    - python-imagesize
-    - python-docutils
+    #- python-xmlschema
+    #- python-click
+    #- python-mock  # not blocking
+    #- python-chardet  # not blocking
+    #- python-pluggy  # not blocking
+    #- pytz
+    #- babel: # bump release
+    #    macros:
+    #     _with_bootstrap: 1
+    #- python-imagesize
+    #- python-docutils
     - python-jinja2:
         macros:
           _without_docs: 1
