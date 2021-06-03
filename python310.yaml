@@ -479,7 +479,6 @@ python310:
     #- python-feedgen
     #- python-argh
     #- python-transaction
-    #- python-sphinxcontrib-log-cabinet
     #- python-jinja2  # not blocking
     #- pyxdg
     #- libreport
@@ -524,7 +523,6 @@ python310:
     #- python-outcome
     #- python-curio
     #- python-sniffio
-    #- python-greenlet
     #- python-dogpile-cache
     #- python-requests-toolbelt
     #- python-trustme
@@ -603,7 +601,6 @@ python310:
     #- python-traitlets
     #- python-pickleshare
     #- python-backcall
-    #- python-genty
     #- python-cycler
     #- python-pymongo
     #- python-fastjsonschema
@@ -749,7 +746,6 @@ python310:
     #- libsolv
 
     #- python-vine
-    #- python-case
     #- python-amqp
     #- python-nose-cover3
     #- python-billiard
@@ -773,7 +769,6 @@ python310:
 
     #- python-requests  # testfull, not blocking
     #- python-numexpr
-    #- librepo # testfull rebuild
     #- python-tables
     #- python-numpydoc
     #- pybind11 # testfull, not blocking
@@ -837,12 +832,6 @@ python310:
     #      _without_tests: 1
     #- python-hypothesmith
     #- python-libcst
-
-    #- python-elementpath:
-    #    macros:
-    #      _without_tests: 1
-    #- python-xmlschema
-    #- python-elementpath
 
     #- python-databases:  # bump release
     #    macros:
