@@ -399,13 +399,11 @@ python310:
     #- python3-pytest-asyncio:
     #    macros:
     #      _without_tests: 1
-    - python-pytest-mock
-    - python-factory-boy
-    - python-text-unidecode
-    - python-faker
+    #- python-pytest-mock
+    #- python-factory-boy
+    #- python-text-unidecode
     #- numpy  # this can start sooner to save time
     #- Cython  # testfull, not blocking (SKIPed)
-    - python-pytest-randomly
     - python-toml  # not blocking
     - python-psycopg2
     - dbus-python
@@ -414,6 +412,10 @@ python310:
     - python-sphinx-testing
     - python-sphinx-removed-in
     - python-pillow
+    - python-validators
+    - python-random2
+    - python-faker
+    - python-pytest-randomly
     - dnf
     - dnf-plugins-core
     - libxml2
