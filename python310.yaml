@@ -428,10 +428,7 @@ python310:
     - python-service-identity
     - python-enchant
 
-    #- python-sqlalchemy:  # FAILS
-    #    macros:
-    #      _without_xdist: 1
-
+    #- python-sqlalchemy  # https://src.fedoraproject.org/rpms/python-sqlalchemy/pull-request/11
     #- python-zope-component
     #- python-zope-i18nmessageid
     #- python-zope-deprecation
@@ -458,7 +455,6 @@ python310:
     #- python-mdit-py-plugins
     #- python-myst-parser
     #- python-pip  # testfull rebuild, wait for breezy, not blocking
-    #- python-sqlalchemy  # xdist enabled tests, no need to build, just clean-up
     #- python-path
     #- python-termcolor
     #- python-pytest-shutil
