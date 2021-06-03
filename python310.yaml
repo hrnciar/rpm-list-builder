@@ -248,39 +248,39 @@ python310:
     #- python-ptyprocess
     #- python-pexpect
     #- python-cpuinfo
-    - python-pytest-benchmark
-    - python-sphinx-theme-py3doc-enhanced
-    - python-fields
-    - python-pytest-cov
-    - python-pytest-timeout
-    - python-greenlet
-    - python-waitress
-    - python-requests-unixsocket
-    - python-sphinx-issues
-    - python-Pallets-Sphinx-Themes
-    - python-sphinxcontrib-log-cabinet
-    - python-werkzeug
-    - python-flask
-    - gpgme
-    - librepo
-    - libdnf  # python3-hawkey
-    - libcomps
+    #- python-pytest-benchmark
+    #- python-sphinx-theme-py3doc-enhanced
+    #- python-fields
+    #- python-pytest-cov
+    #- python-pytest-timeout
+    #- python-greenlet
+    #- python-waitress
+    #- python-requests-unixsocket
+    #- python-sphinx-issues
+    #- python-Pallets-Sphinx-Themes
+    #- python-sphinxcontrib-log-cabinet
+    #- python-werkzeug
+    #- python-flask
+    #- gpgme
+    #- librepo
+    #- libdnf  # python3-hawkey
+    #- libcomps
 
-    - meson  # check disabled by default, if not, without check build needed before pygobject3
-    - babel # not blocking
-    - python-dateutil # not blocking
-    - python-configobj
-    - python-bottle
-    - python-tornado
-    - python-jsonpointer
-    - python-jsonpatch
-    - python-jsonschema:
-        macros:
-          _without_tests: 1
-    - ninja-build
-    - gobject-introspection
-    - pygobject3
-    - python-pycurl
+    #- meson  # check disabled by default, if not, without check build needed before pygobject3
+    #- babel # not blocking
+    #- python-dateutil # not blocking
+    #- python-configobj
+    #- python-bottle
+    #- python-tornado
+    #- python-jsonpointer
+    #- python-jsonpatch
+    #- python-jsonschema:
+    #    macros:
+    #      _without_tests: 1
+    #- ninja-build
+    #- gobject-introspection
+    #- pygobject3
+    #- python-pycurl
 
     - python-blinker
     - python-asn1crypto
