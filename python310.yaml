@@ -395,10 +395,10 @@ python310:
     #    macros:
     #      _without_tests: 1
     #- python-genty
-    - python-flaky
-    - python3-pytest-asyncio:
-        macros:
-          _without_tests: 1
+    #- python-flaky
+    #- python3-pytest-asyncio:
+    #    macros:
+    #      _without_tests: 1
     - python-pytest-mock
     - python-factory-boy
     - python-text-unidecode
