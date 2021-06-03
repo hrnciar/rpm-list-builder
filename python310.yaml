@@ -345,10 +345,10 @@ python310:
     #- python-setuptools_scm  # tesfull, not blocking
     #- python-sqlparse  # needs python3-pytest-cov but tests are disabled by default
     #- sip  # not blocking yet, probably until qt
-    - python-humanize
-    - python-augeas
-    - python-memcached
-    - fros
+    #- python-humanize
+    #- python-augeas
+    #- python-memcached
+    #- fros
     - python-kerberos
     - python-editor
     - python-chai
