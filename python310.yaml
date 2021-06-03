@@ -222,7 +222,6 @@ python310:
     #- rpm
     #- unbound
     #- pycairo
-    #- Cython  # testfull, not blocking (SKIPed)
 
     #- python-dateutil:
     #    macros:
@@ -405,6 +404,7 @@ python310:
     - python-text-unidecode
     - python-faker
     - numpy  # not blocking until very later (except for cython that we skip)
+    #- Cython  # testfull, not blocking (SKIPed)
     - python-pytest-randomly
     - python-toml  # not blocking
     - python-psycopg2
