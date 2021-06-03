@@ -411,11 +411,11 @@ python310:
     #- python-validators  # not blocking dbus+qt+pillow, only faker
     #- python-random2  # not blocking dbus+qt+pillow, only faker
     #- dbus-python
-    - python-qt5 # speed things up by building both pyqts at the same time
+    #- python-qt5 # speed things up by building both pyqts at the same time
     #- PyQt4
-    - python-pillow
-    - python-faker
-    - python-pytest-randomly
+    #- python-pillow
+    #- python-faker
+    #- python-pytest-randomly
 
     # speedup: you can possibly continue here without pyqts and see how far you get before they finish
 
@@ -426,47 +426,47 @@ python310:
     #- python-requests-kerberos
     #- python-tzlocal
     #- python-ephem
-    - python-convertdate
-    - python-dateparser
-    - python-arrow
-    - python-zope-interface
-    - python-service-identity
-    - python-enchant
+    #- python-convertdate
+    #- python-dateparser
+    #- python-arrow
+    #- python-zope-interface
+    #- python-service-identity
+    #- python-enchant
 
-    #- python-sqlalchemy
+    #- python-sqlalchemy  # not blocking here
     #- python-zope-component
     #- python-zope-i18nmessageid
-    #- python-zope-deprecation
-    #- python-pytest-capturelog
-    #- python-scripttest
-    #- python-setuptools_git
-    #- python-sphinx-epytext
-    #- python-dulwich
-    #- python-fastimport
-    #- python-certifi
-    #- python-spec
-    #- python-lexicon
-    #- python-should_dsl
-    #- python-fluidity-sm
-    #- python-pynacl
-    #- python-flit:
-    #    macros:
-    #     _without_tests: 1
-    #- python-sphinx-inline-tabs
-    #- breezy  # only blocks pip
-    #- python-patiencediff
-    #- python-paramiko
-    #- python-markdown-it-py
-    #- python-mdit-py-plugins
-    #- python-myst-parser
+    - python-zope-deprecation
+    - python-pytest-capturelog
+    - python-scripttest
+    - python-setuptools_git
+    - python-sphinx-epytext
+    - python-dulwich
+    - python-fastimport
+    - python-certifi
+    - python-spec
+    - python-lexicon
+    - python-should_dsl
+    - python-fluidity-sm
+    - python-pynacl
+    - python-flit:
+        macros:
+         _without_tests: 1
+    - python-sphinx-inline-tabs
+    - breezy  # only blocks pip
+    - python-patiencediff
+    - python-paramiko
+    - python-markdown-it-py
+    - python-mdit-py-plugins
+    - python-myst-parser
     #- python-pip  # testfull rebuild, wait for breezy, not blocking
-    #- python-path
-    #- python-termcolor
-    #- python-pytest-shutil
-    #- python-openstackdocstheme
-    #- python-zope-exceptions
-    #- python-zope-schema  # https://src.fedoraproject.org/rpms/python-zope-schema/pull-request/3
-    #- python-zope-configuration
+    - python-path
+    - python-termcolor
+    - python-pytest-shutil
+    - python-openstackdocstheme
+    - python-zope-exceptions
+    - python-zope-schema
+    - python-zope-configuration
 
     #- python-mccabe
     #- python-pycodestyle
