@@ -368,8 +368,8 @@ python310:
     #- python-daemon
     #- brotli
     #- python-multidict
-    - python-bugzilla
-    - python-simplemediawiki
+    #- python-bugzilla
+    #- python-simplemediawiki
     - python-smmap
     - python-cccolutils
     - python-openidc-client
@@ -403,7 +403,7 @@ python310:
     - python-factory-boy
     - python-text-unidecode
     - python-faker
-    - numpy
+    #- numpy  # this can start sooner to save time
     #- Cython  # testfull, not blocking (SKIPed)
     - python-pytest-randomly
     - python-toml  # not blocking
