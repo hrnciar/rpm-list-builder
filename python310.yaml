@@ -297,18 +297,15 @@ python310:
     #- python-pydbus
     #- python-ntplib
     #- python-wrapt
-    - python-lazy-object-proxy
-    - python-webencodings
-    - python-ordered-set
-    - python-requests-file
-    - python-pid
+    #- python-lazy-object-proxy
+    #- python-webencodings
+    #- python-ordered-set
+    #- python-requests-file
+    #- python-pid
     - python-polib
     - python-argcomplete
     - python-u-msgpack-python
     - python-pytest-expect
-    - python-sqlalchemy:  # FAILS
-        macros:
-          _without_xdist: 1
     - python-sphinxcontrib-websupport:
         macros:
           _without_optional_tests: 1
@@ -334,6 +331,10 @@ python310:
     # testfull rebuilds, not blocking:
     - python-py
     - python-six
+
+    #- python-sqlalchemy:  # FAILS
+    #    macros:
+    #      _without_xdist: 1
 
     #- python-redis
     #- python-bcrypt
@@ -468,7 +469,7 @@ python310:
     #- python-pytest-shutil
     #- python-openstackdocstheme
     #- python-zope-exceptions
-    #- python-zope-schema
+    #- python-zope-schema  # https://src.fedoraproject.org/rpms/python-zope-schema/pull-request/3
     #- python-zope-configuration
 
     #- python-mccabe
