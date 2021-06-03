@@ -360,13 +360,13 @@ python310:
     #- python-colander
     #- python-zope-event
     #- python-zope-testing
-    - python-pyasn1
-    - python-zmq
-    - python-stomper
-    - python-lockfile
-    - python-websocket-client
-    - python-pysocks  # not blocking
-    - python-daemon  # https://src.fedoraproject.org/rpms/python-daemon/pull-request/7
+    #- python-pyasn1
+    #- python-zmq
+    #- python-stomper
+    #- python-lockfile
+    #- python-websocket-client
+    #- python-pysocks  # not blocking
+    - python-daemon
     - brotli
     - python-multidict
     - python-bugzilla
@@ -428,7 +428,7 @@ python310:
     - python-service-identity
     - python-enchant
 
-    #- python-sqlalchemy  # https://src.fedoraproject.org/rpms/python-sqlalchemy/pull-request/11
+    #- python-sqlalchemy
     #- python-zope-component
     #- python-zope-i18nmessageid
     #- python-zope-deprecation
@@ -561,7 +561,7 @@ python310:
     #- python-templated-dictionary
     #- mock
     #- python-responses
-    #- python-alembic
+    #- python-alembic  # https://src.fedoraproject.org/rpms/python-alembic/pull-request/11
     #- python-defusedxml
     #- python-pytest-fixture-config
     #- python-pytest-virtualenv
