@@ -323,119 +323,119 @@ python310:
     #- python-oauthlib
     #- pyparted
     #- libblockdev
-    - python-systemd  # not blocking now, but later
+    #- python-systemd  # not blocking now, but later
 
     # docs rebuilds, not blocking:
-    - python-packaging
+    #- python-packaging
 
     # testfull rebuilds, not blocking:
-    - python-py
-    - python-six
+    #- python-py
+    #- python-six
+
+    - python-redis
+    - python-bcrypt
+    - python-olefile
+    - pyOpenSSL
+
+    - python-isodate
+    - python-rdflib
+    - python-selenium
+    - python-incremental
+    - mercurial
+    - python-setuptools_scm  # tesfull, not blocking
+    - python-sqlparse  # needs python3-pytest-cov but tests are disabled by default
+    - sip
+    - python-humanize
+    - python-augeas
+    - python-memcached
+    - fros
+    - python-kerberos
+    - python-editor
+    - python-chai
+    - python-simplejson
+    - python-regex
+    - python-pymeeus
+    - python-bleach
+    - python-translationstring
+    - python-colander
+    - python-zope-event
+    - python-zope-testing
+    - python-pyasn1
+    - python-zmq
+    - python-stomper
+    - python-lockfile
+    - python-websocket-client
+    - python-pysocks
+    - python-daemon  # https://src.fedoraproject.org/rpms/python-daemon/pull-request/7
+    - brotli
+    - python-multidict
+    - python-bugzilla
+    - python-simplemediawiki
+    - python-smmap
+    - python-cccolutils
+    - python-openidc-client
+    - python-rpmfluff  # not blocking
+    - python-isort
+    - file # python3-magic
+    - python-tox
+    - python-filelock
+    - python-elementpath:
+        macros:
+          _without_tests: 1
+    - python-distro
+    - python-tempita
+    - python-paste-deploy
+    - python-plaster
+    - python-repoze-lru
+    - python-nose-exclude
+    - python-venusian
+    - python-soupsieve:
+        macros:
+          _without_tests: 1
+    - python-beautifulsoup4
+    - python-soupsieve  # not blocking
+    - python-cssselect
+    - python-WSGIProxy2
+    - python-raven
+    - python-towncrier:
+        macros:
+          _without_tests: 1
+    - python-genty
+    - python-flaky
+    - python3-pytest-asyncio:
+        macros:
+          _without_tests: 1
+    - python-pytest-mock
+    - python-factory-boy
+    - python-text-unidecode
+    - python-faker
+    - numpy  # not blocking until very later (except for cython that we skip)
+    - python-pytest-randomly
+    - python-toml
+    - python-psycopg2
+    - dbus-python
+    - python-qt5 # speed things up by building both pyqts at the same time
+    - PyQt4
+    - python-sphinx-testing
+    - python-sphinx-removed-in
+    - python-pillow
+    - dnf
+    - dnf-plugins-core
+    - libxml2
+    - glade
+    - python-requests-kerberos
+    - python-tzlocal
+    - python-ephem
+    - python-convertdate
+    - python-dateparser
+    - python-arrow
+    - python-zope-interface
+    - python-service-identity
+    - python-enchant
 
     #- python-sqlalchemy:  # FAILS
     #    macros:
     #      _without_xdist: 1
-
-    #- python-redis
-    #- python-bcrypt
-    #- python-olefile
-    #- pyOpenSSL
-
-    #- python-isodate
-    #- python-rdflib
-    #- python-selenium
-    #- python-incremental
-    #- mercurial
-    #- python-setuptools_scm  # tesfull, not blocking
-    #- python-sqlparse  # needs python3-pytest-cov but tests are disabled by default
-    #- sip
-    #- python-humanize
-    #- python-augeas
-    #- python-memcached
-    #- fros
-    #- python-kerberos
-    #- python-editor
-    #- python-chai
-    #- python-simplejson
-    #- python-regex
-    #- python-pymeeus
-    #- python-bleach
-    #- python-translationstring
-    #- python-colander
-    #- python-zope-event
-    #- python-zope-testing
-    #- python-pyasn1
-    #- python-zmq
-    #- python-stomper
-    #- python-lockfile
-    #- python-websocket-client
-    #- python-pysocks
-    #- python-daemon  # https://src.fedoraproject.org/rpms/python-daemon/pull-request/7
-    #- brotli
-    #- python-multidict
-    #- python-bugzilla
-    #- python-simplemediawiki
-    #- python-smmap
-    #- python-cccolutils
-    #- python-openidc-client
-    #- python-rpmfluff  # not blocking
-    #- python-isort
-    #- file # python3-magic
-    #- python-tox
-    #- python-filelock
-    #- python-elementpath:
-    #    macros:
-    #      _without_tests: 1
-    #- python-distro
-    #- python-tempita
-    #- python-paste-deploy
-    #- python-plaster
-    #- python-repoze-lru
-    #- python-nose-exclude
-    #- python-venusian
-    #- python-soupsieve:
-    #    macros:
-    #      _without_tests: 1
-    #- python-beautifulsoup4
-    #- python-soupsieve  # not blocking
-    #- python-cssselect
-    #- python-WSGIProxy2
-    #- python-raven
-    #- python-towncrier:
-    #    macros:
-    #      _without_tests: 1
-    #- python-genty
-    #- python-flaky
-    #- python3-pytest-asyncio:
-    #    macros:
-    #      _without_tests: 1
-    #- python-pytest-mock
-    #- python-factory-boy
-    #- python-text-unidecode
-    #- python-faker
-    #- numpy  # not blocking until very later (except for cython that we skip)
-    #- python-pytest-randomly
-    #- python-toml
-    #- python-psycopg2
-    #- dbus-python
-    #- python-qt5 # speed things up by building both pyqts at the same time
-    #- PyQt4
-    #- python-sphinx-testing
-    #- python-sphinx-removed-in
-    #- python-pillow
-    #- dnf
-    #- dnf-plugins-core
-    #- libxml2
-    #- glade
-    #- python-requests-kerberos
-    #- python-tzlocal
-    #- python-ephem
-    #- python-convertdate
-    #- python-dateparser
-    #- python-arrow
-    #- python-zope-interface
-    #- python-service-identity
-    #- python-enchant
 
     #- python-zope-component
     #- python-zope-i18nmessageid
