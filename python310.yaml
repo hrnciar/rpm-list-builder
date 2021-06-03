@@ -365,9 +365,9 @@ python310:
     #- python-lockfile
     #- python-websocket-client
     #- python-pysocks  # not blocking
-    - python-daemon
-    - brotli
-    - python-multidict
+    #- python-daemon
+    #- brotli
+    #- python-multidict
     - python-bugzilla
     - python-simplemediawiki
     - python-smmap
@@ -403,7 +403,7 @@ python310:
     - python-factory-boy
     - python-text-unidecode
     - python-faker
-    - numpy  # not blocking until very later (except for cython that we skip)
+    - numpy
     #- Cython  # testfull, not blocking (SKIPed)
     - python-pytest-randomly
     - python-toml  # not blocking
