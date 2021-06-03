@@ -337,14 +337,14 @@ python310:
     #- python-olefile
     #- pyOpenSSL
 
-    - python-isodate
-    - python-rdflib
-    - python-selenium
-    - python-incremental
-    - mercurial
-    - python-setuptools_scm  # tesfull, not blocking
-    - python-sqlparse  # needs python3-pytest-cov but tests are disabled by default
-    - sip
+    #- python-isodate
+    #- python-rdflib
+    #- python-selenium
+    #- python-incremental
+    #- mercurial
+    #- python-setuptools_scm  # tesfull, not blocking
+    #- python-sqlparse  # needs python3-pytest-cov but tests are disabled by default
+    #- sip  # not blocking yet, probably until qt
     - python-humanize
     - python-augeas
     - python-memcached
