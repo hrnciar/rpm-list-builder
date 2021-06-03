@@ -412,7 +412,7 @@ python310:
     #- python-random2  # not blocking dbus+qt+pillow, only faker
     #- dbus-python
     - python-qt5 # speed things up by building both pyqts at the same time
-    - PyQt4
+    #- PyQt4
     - python-pillow
     - python-faker
     - python-pytest-randomly
@@ -420,12 +420,12 @@ python310:
     # speedup: you can possibly continue here without pyqts and see how far you get before they finish
 
     #- dnf
-    - dnf-plugins-core
-    - libxml2
-    - glade
-    - python-requests-kerberos
-    - python-tzlocal
-    - python-ephem
+    #- dnf-plugins-core
+    #- libxml2
+    #- glade
+    #- python-requests-kerberos
+    #- python-tzlocal
+    #- python-ephem
     - python-convertdate
     - python-dateparser
     - python-arrow
