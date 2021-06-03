@@ -404,16 +404,16 @@ python310:
     #- python-text-unidecode
     #- numpy  # this can start sooner to save time
     #- Cython  # testfull, not blocking (SKIPed)
-    - python-toml  # not blocking
-    - python-psycopg2
-    - dbus-python
+    #- python-toml  # not blocking
+    #- python-psycopg2
+    #- python-sphinx-testing
+    - python-sphinx-removed-in  # not blocking dbus+qt, only pillow
+    - python-validators  # not blocking dbus+qt+pillow, only faker
+    - python-random2  # not blocking dbus+qt+pillow, only faker
+    #- dbus-python
     - python-qt5 # speed things up by building both pyqts at the same time
     - PyQt4
-    - python-sphinx-testing
-    - python-sphinx-removed-in
     - python-pillow
-    - python-validators
-    - python-random2
     - python-faker
     - python-pytest-randomly
     - dnf
