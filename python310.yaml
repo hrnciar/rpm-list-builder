@@ -319,11 +319,11 @@ python310:
     #- python-sphinxcontrib-qthelp
     #- python-sphinxcontrib-serializinghtml
     #- python-sphinxcontrib-httpdomain # to here
-    - python-jwt
-    - python-oauthlib
-    - pyparted
-    - libblockdev
-    - python-systemd
+    #- python-jwt
+    #- python-oauthlib
+    #- pyparted
+    #- libblockdev
+    - python-systemd  # not blocking now, but later
 
     # docs rebuilds, not blocking:
     - python-packaging
