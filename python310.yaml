@@ -445,7 +445,7 @@ python310:
     #- python-fastimport
     #- python-certifi
     #- python-spec
-    - python-lexicon
+    #- python-lexicon
     - python-should_dsl
     - python-fluidity-sm
     - python-pynacl
@@ -459,7 +459,7 @@ python310:
     - python-markdown-it-py
     - python-mdit-py-plugins
     - python-myst-parser
-    #- python-pip  # testfull rebuild, wait for breezy, not blocking
+    - python-pip  # testfull rebuild, wait for breezy, not blocking
     - python-path
     - python-termcolor
     - python-pytest-shutil
@@ -468,104 +468,104 @@ python310:
     - python-zope-schema
     - python-zope-configuration
 
-    #- python-mccabe
-    #- python-pycodestyle
-    #- python-gitdb
-    #- GitPython
-    #- python3-typed_ast
-    #- python-astroid
-    #- python-extras
-    #- python-httpbin
-    #- python-pytest-httpbin
-    #- python-ldap
-    #- rpmconf
+    - python-mccabe
+    - python-pycodestyle
+    - python-gitdb
+    - GitPython
+    - python3-typed_ast
+    - python-astroid
+    - python-extras
+    - python-httpbin
+    - python-pytest-httpbin
+    - python-ldap
+    - rpmconf
 
-    #- python-pyrsistent
-    #- python-feedgen
-    #- python-argh
-    #- python-transaction
-    #- python-jinja2  # not blocking
-    #- pyxdg
-    #- libreport
-    #- python-meh
-    #- anaconda
-    #- koji
-    #- dnf-plugins-extras
-    #- python-simpleline
-    #- abrt
-    #- python-paste
-    #- python-plaster-pastedeploy
-    #- createrepo_c
+    - python-pyrsistent
+    - python-feedgen
+    - python-argh
+    - python-transaction
+    - python-jinja2  # not blocking
+    - pyxdg
+    - libreport
+    - python-meh
+    - anaconda
+    - koji
+    - dnf-plugins-extras
+    - python-simpleline
+    - abrt
+    - python-paste
+    - python-plaster-pastedeploy
+    - createrepo_c
 
-    #- python-httplib2
-    #- python-typing-extensions
-    #- python-yarl
-    #- python-hupper
-    #- subunit
-    #- python-testrepository
-    #- python-stevedore
+    - python-httplib2
+    - python-typing-extensions
+    - python-yarl
+    - python-hupper
+    - subunit
+    - python-testrepository
+    - python-stevedore
 
-    #- python-hyperlink
-    #- python-hamcrest
-    #- python-hpack
-    #- python-mistune
-    #- python-m2r
+    - python-hyperlink
+    - python-hamcrest
+    - python-hpack
+    - python-mistune
+    - python-m2r
 
-    #- python-sphinxcontrib-apidoc
-    #- python-pbr  # not blocking
+    - python-sphinxcontrib-apidoc
+    - python-pbr  # not blocking
 
-    #- python-jmespath
-    #- python-botocore
-    #- python-s3transfer
-    #- python-boto3
-    #- python-async-timeout:
-    #    macros:
-    #      _without_tests: 1
-    #- python-aiohttp
-    #- python-monotonic
-    #- python-betamax
-    #- python-async-generator
-    #- python-outcome
-    #- python-curio
-    #- python-sniffio
-    #- python-dogpile-cache
-    #- python-requests-toolbelt
-    #- python-trustme
-    #- python-trio:
-    #    macros:
-    #      _without_tests: 1
-    #- python-dns
-    #- python-httpretty
-    #- python-boto
-    #- python-mypy_extensions
-    #- python3-mypy
-    #- python-rsa
-    #- python-rfc3986
-    #- python-h11
-    #- python-httpx
-    #- python-httpcore
-    #- python-contextlib2
-    #- python-vcrpy
+    - python-jmespath
+    - python-botocore
+    - python-s3transfer
+    - python-boto3
+    - python-async-timeout:
+        macros:
+          _without_tests: 1
+    - python-aiohttp
+    - python-monotonic
+    - python-betamax
+    - python-async-generator
+    - python-outcome
+    - python-curio
+    - python-sniffio
+    - python-dogpile-cache
+    - python-requests-toolbelt
+    - python-trustme
+    - python-trio:
+        macros:
+          _without_tests: 1
+    - python-dns
+    - python-httpretty
+    - python-boto
+    - python-mypy_extensions
+    - python3-mypy
+    - python-rsa
+    - python-rfc3986
+    - python-h11
+    - python-httpx
+    - python-httpcore
+    - python-contextlib2
+    - python-vcrpy
 
-    #- python-constantly
-    #- python-hyperframe
-    #- python-h2
-    #- python-priority  # test_period_of_repetition flaky in copr (timeouts)
-    #- python-graphviz
-    #- python-Automat:
-    #    macros:
-    #      _without_tests: 1
-    #- python-munch
-    #- python-productmd
-    #- python-multilib
-    #- python-kitchen
-    #- lorax
-    #- python3-py3dns
-    #- python-pylibravatar
-    #- python-pyroute2
-    #- python-templated-dictionary
-    #- mock
-    #- python-responses
+    - python-constantly
+    - python-hyperframe
+    - python-h2
+    - python-priority  # test_period_of_repetition flaky in copr (timeouts)
+    - python-graphviz
+    - python-Automat:
+        macros:
+          _without_tests: 1
+    - python-munch
+    - python-productmd
+    - python-multilib
+    - python-kitchen
+    - lorax
+    - python3-py3dns
+    - python-pylibravatar
+    - python-pyroute2
+    - python-templated-dictionary
+    - mock
+    - python-responses
     #- python-alembic  # https://src.fedoraproject.org/rpms/python-alembic/pull-request/11
     #- python-defusedxml
     #- python-pytest-fixture-config
