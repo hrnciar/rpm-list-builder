@@ -302,23 +302,23 @@ python310:
     #- python-ordered-set
     #- python-requests-file
     #- python-pid
-    - python-polib
-    - python-argcomplete
-    - python-u-msgpack-python
-    - python-pytest-expect
-    - python-sphinxcontrib-websupport:
-        macros:
-          _without_optional_tests: 1
-    - python-genshi
-    - python-html5lib
-    - python-sphinx # all of those are not blocking:
-    - python-sphinxcontrib-applehelp
-    - python-sphinxcontrib-devhelp
-    - python-sphinxcontrib-htmlhelp
-    - python-sphinxcontrib-jsmath
-    - python-sphinxcontrib-qthelp
-    - python-sphinxcontrib-serializinghtml
-    - python-sphinxcontrib-httpdomain # to here
+    #- python-polib
+    #- python-argcomplete
+    #- python-u-msgpack-python
+    #- python-pytest-expect
+    #- python-sphinxcontrib-websupport:
+    #    macros:
+    #      _without_optional_tests: 1
+    #- python-genshi
+    #- python-html5lib
+    #- python-sphinx # all of those are not blocking:
+    #- python-sphinxcontrib-applehelp
+    #- python-sphinxcontrib-devhelp
+    #- python-sphinxcontrib-htmlhelp
+    #- python-sphinxcontrib-jsmath
+    #- python-sphinxcontrib-qthelp
+    #- python-sphinxcontrib-serializinghtml
+    #- python-sphinxcontrib-httpdomain # to here
     - python-jwt
     - python-oauthlib
     - pyparted
