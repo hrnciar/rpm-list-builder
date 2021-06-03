@@ -282,12 +282,12 @@ python310:
     #- pygobject3
     #- python-pycurl
 
-    - python-blinker
-    - python-asn1crypto
-    - python-prettytable
-    - pyserial
-    - libselinux
-    - policycoreutils
+    #- python-blinker
+    #- python-asn1crypto
+    #- python-prettytable
+    #- pyserial
+    #- libselinux
+    #- policycoreutils
     - pykickstart
     - python-pyudev
     - libbytesize
