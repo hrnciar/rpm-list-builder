@@ -288,15 +288,15 @@ python310:
     #- pyserial
     #- libselinux
     #- policycoreutils
-    - pykickstart
-    - python-pyudev
-    - libbytesize
-    - python-blivet
-    - python-requests-ftp
-    - libpwquality
-    - python-pydbus
-    - python-ntplib
-    - python-wrapt
+    #- pykickstart
+    #- python-pyudev
+    #- libbytesize
+    #- python-blivet
+    #- python-requests-ftp
+    #- libpwquality
+    #- python-pydbus
+    #- python-ntplib
+    #- python-wrapt
     - python-lazy-object-proxy
     - python-webencodings
     - python-ordered-set
@@ -306,12 +306,12 @@ python310:
     - python-argcomplete
     - python-u-msgpack-python
     - python-pytest-expect
-    - python-sqlalchemy:
+    - python-sqlalchemy:  # FAILS
         macros:
           _without_xdist: 1
     - python-sphinxcontrib-websupport:
         macros:
-          _without_tests: 1
+          _without_optional_tests: 1
     - python-genshi
     - python-html5lib
     - python-sphinx # all of those are not blocking:
@@ -369,7 +369,7 @@ python310:
     #- python-lockfile
     #- python-websocket-client
     #- python-pysocks
-    #- python-daemon
+    #- python-daemon  # https://src.fedoraproject.org/rpms/python-daemon/pull-request/7
     #- brotli
     #- python-multidict
     #- python-bugzilla
@@ -659,7 +659,7 @@ python310:
     #- pybind11:
     #    macros:
     #      _without_tests: 1
-    #- scipy  # https://bugzilla.redhat.com/show_bug.cgi?id=1959353
+    #- scipy  # try https://src.fedoraproject.org/rpms/scipy/pull-request/19 and adapt
     #- python-sphinx-gallery
     #- python-jupyterlab_pygments
     #- python-nbconvert:
