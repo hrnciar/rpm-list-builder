@@ -349,17 +349,17 @@ python310:
     #- python-augeas
     #- python-memcached
     #- fros
-    - python-kerberos
-    - python-editor
-    - python-chai
-    - python-simplejson
-    - python-regex
-    - python-pymeeus
-    - python-bleach
-    - python-translationstring
-    - python-colander
-    - python-zope-event
-    - python-zope-testing
+    #- python-kerberos
+    #- python-editor
+    #- python-chai
+    #- python-simplejson
+    #- python-regex
+    #- python-pymeeus
+    #- python-bleach
+    #- python-translationstring
+    #- python-colander
+    #- python-zope-event
+    #- python-zope-testing
     - python-pyasn1
     - python-zmq
     - python-stomper
