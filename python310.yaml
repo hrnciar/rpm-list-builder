@@ -407,16 +407,19 @@ python310:
     #- python-toml  # not blocking
     #- python-psycopg2
     #- python-sphinx-testing
-    - python-sphinx-removed-in  # not blocking dbus+qt, only pillow
-    - python-validators  # not blocking dbus+qt+pillow, only faker
-    - python-random2  # not blocking dbus+qt+pillow, only faker
+    #- python-sphinx-removed-in  # not blocking dbus+qt, only pillow
+    #- python-validators  # not blocking dbus+qt+pillow, only faker
+    #- python-random2  # not blocking dbus+qt+pillow, only faker
     #- dbus-python
     - python-qt5 # speed things up by building both pyqts at the same time
     - PyQt4
     - python-pillow
     - python-faker
     - python-pytest-randomly
-    - dnf
+
+    # speedup: you can possibly continue here without pyqts and see how far you get before they finish
+
+    #- dnf
     - dnf-plugins-core
     - libxml2
     - glade
