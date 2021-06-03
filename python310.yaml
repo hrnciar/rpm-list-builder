@@ -436,15 +436,15 @@ python310:
     #- python-sqlalchemy  # not blocking here
     #- python-zope-component
     #- python-zope-i18nmessageid
-    - python-zope-deprecation
-    - python-pytest-capturelog
-    - python-scripttest
-    - python-setuptools_git
-    - python-sphinx-epytext
-    - python-dulwich
-    - python-fastimport
-    - python-certifi
-    - python-spec
+    #- python-zope-deprecation
+    #- python-pytest-capturelog
+    #- python-scripttest
+    #- python-setuptools_git
+    #- python-sphinx-epytext
+    #- python-dulwich
+    #- python-fastimport
+    #- python-certifi
+    #- python-spec
     - python-lexicon
     - python-should_dsl
     - python-fluidity-sm
