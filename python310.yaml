@@ -744,10 +744,10 @@ python310:
     #- python-requests-gssapi
     #- rpmlint  # XXX now newly is a regular Python package, BRs pytest flake8 :( -- I've tagged in the older version
     #- rpkg
-    - python-django
-    - python3-openid
-    - python-openid-cla
-    - python-openid-teams
+    #- python-django
+    #- python3-openid
+    #- python-openid-cla
+    #- python-openid-teams
     - python-pyramid-fas-openid
     - python-fedora
     - fedmsg
@@ -768,7 +768,7 @@ python310:
     #- cloud-init  # not blocking, fails
 
     #- python-smartcols
-    - fedmod  # XXX libsolv, python-click-completion, python-requests-gssapi
+    - fedmod  # XXX libsolv
 
     ## this can run sooner
     #- gdb  # not blocking XXX wait for maintainers
@@ -779,8 +779,8 @@ python310:
     #- boost  # not blocking DONE
     #- vtk  # https://bugzilla.redhat.com/show_bug.cgi?id=1902729
 
-    - python-requests  # testfull, not blocking
-    - python-numexpr
+    #- python-requests  # testfull, not blocking
+    #- python-numexpr
     - python-tables
     - python-numpydoc
     - pybind11 # testfull, not blocking
