@@ -527,15 +527,15 @@ python310:
     #- python-outcome
     #- python-curio
     #- python-sniffio
-    - python-dogpile-cache
-    - python-requests-toolbelt
-    - python-trustme
-    - python-trio:
-        macros:
-          _without_tests: 1
-    - python-dns
-    - python-httpretty
-    - python-boto
+    #- python-dogpile-cache
+    #- python-requests-toolbelt
+    #- python-trustme
+    #- python-trio:
+    #    macros:
+    #      _without_tests: 1
+    #- python-dns
+    #- python-httpretty
+    #- python-boto
     - python-mypy_extensions
     - python3-mypy
     - python-rsa
@@ -556,8 +556,8 @@ python310:
     #      _without_tests: 1
     #- python-munch
     #- python-productmd
-    - python-multilib
-    - python-kitchen
+    #- python-multilib
+    #- python-kitchen
     - lorax
     - python3-py3dns
     - python-pylibravatar
@@ -572,18 +572,19 @@ python310:
     #- python-pytest-virtualenv
     #- python-jaraco-packaging
     #- python-pathspec
-    - python-rst-linker
-    - python-jaraco-envs
-    - python-twisted
-    - python-towncrier  # testfull rebuild, untested here
-    - python-Automat  # testfull rebuild
-    - python-pygments-pytest
-    - python-attrs  # testfull rebuild, not blocking (fails)
-    - python-invoke:
-        macros:
-          _without_tests: 1
-    - pytest # testfull rebuild
-    - kernel-tools  # python3-perf
+    #- python-rst-linker
+    #- python-jaraco-envs
+    #- python-twisted
+    #- python-click-default-group
+    #- python-towncrier  # testfull rebuild, failed here XXX
+    #- python-Automat  # testfull rebuild
+    #- python-pygments-pytest
+    #- python-attrs  # testfull rebuild, not blocking (fails)
+    #- python-invoke:
+    #    macros:
+    #      _without_tests: 1
+    #- pytest # testfull rebuild
+    #- kernel-tools  # python3-perf
     - python-jsonschema  # testfull, not checked here
     - python-txzmq
     - python-txws
@@ -591,7 +592,7 @@ python310:
     - pdc-client
     - python-gevent
     - libgit2-glib
-    - python-testpath
+    #- python-testpath
     - python-requests-download
     - python-entrypoints
     - python-flit  # testfull
@@ -609,10 +610,10 @@ python310:
     #- python-cycler
     #- python-pymongo
     #- python-fastjsonschema
-    - python-sphinxcontrib-github-alt
-    - python-jupyter-core
-    - python-nbformat
-    - python-pandocfilters
+    #- python-sphinxcontrib-github-alt
+    #- python-jupyter-core
+    #- python-nbformat
+    #- python-pandocfilters
     - python-orderedset
     - python-prometheus_client
     - python-send2trash
@@ -687,13 +688,13 @@ python310:
     #- python-pyquery:
     #    macros:
     #      _without_tests: 1
-    - python-pylons-sphinx-themes
-    - python-webtest
-    - python-pyramid
-    - python-cornice
-    - python-cornice-sphinx
-    - python3-pytest-asyncio
-    - python-asgiref
+    #- python-pylons-sphinx-themes
+    #- python-webtest
+    #- python-pyramid
+    #- python-cornice
+    #- python-cornice-sphinx
+    #- python3-pytest-asyncio
+    #- python-asgiref
     - kobo
     - python-moksha-common
     - python-moksha-hub
@@ -767,13 +768,13 @@ python310:
     - fedmod
 
     ## this can run sooner
-    #- gdb  # not blocking
+    #- gdb  # not blocking XXX wait for maintainers
     #- openmpi DONE
-    - mpich
-    - python-dill
-    - mpi4py
+    #- mpich DONE
+    #- python-dill DONE
+    #- mpi4py DONE
     #- vtk  # https://bugzilla.redhat.com/show_bug.cgi?id=1902729
-    #- boost  # not blocking
+    - boost  # not blocking
 
     #- python-requests  # testfull, not blocking
     #- python-numexpr
