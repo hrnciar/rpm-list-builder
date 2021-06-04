@@ -467,24 +467,24 @@ python310:
     #- python-zope-schema
     #- python-zope-configuration
 
-    - python-mccabe
-    - python-pycodestyle
-    - python-gitdb
-    - GitPython
-    - python3-typed_ast
-    - python-astroid
-    - python-extras
-    - python-httpbin
+    #- python-mccabe
+    #- python-pycodestyle
+    #- python-gitdb
+    #- GitPython
+    #- python3-typed_ast
+    #- python-astroid
+    #- python-extras  # not blocking
+    #- python-httpbin
     - python-pytest-httpbin
     - python-ldap
     - rpmconf
 
-    - python-pyrsistent
-    - python-feedgen
-    - python-argh
-    - python-transaction
-    - python-jinja2  # not blocking
-    - pyxdg
+    #- python-pyrsistent
+    #- python-feedgen
+    #- python-argh
+    #- python-transaction
+    #- python-jinja2  # not blocking
+    #- pyxdg
     - libreport
     - python-meh
     - anaconda
@@ -496,26 +496,26 @@ python310:
     - python-plaster-pastedeploy
     - createrepo_c
 
-    - python-httplib2
-    - python-typing-extensions
-    - python-yarl
-    - python-hupper
-    - subunit
-    - python-testrepository
+    #- python-httplib2
+    #- python-typing-extensions
+    #- python-yarl
+    #- python-hupper
+    #- subunit
+    #- python-testrepository
     - python-stevedore
 
-    - python-hyperlink
-    - python-hamcrest
-    - python-hpack
-    - python-mistune
-    - python-m2r
+    #- python-hyperlink
+    #- python-hamcrest
+    #- python-hpack
+    #- python-mistune
+    #- python-m2r
 
-    - python-sphinxcontrib-apidoc
-    - python-pbr  # not blocking
+    #- python-sphinxcontrib-apidoc
+    #- python-pbr  # not blocking
 
-    - python-jmespath
-    - python-botocore
-    - python-s3transfer
+    #- python-jmespath
+    #- python-botocore
+    #- python-s3transfer
     - python-boto3
     - python-async-timeout:
         macros:
@@ -598,61 +598,62 @@ python310:
     #- python-setuptools  # testfull rebuild
     #- python-urllib3  # testfull rebuild
 
-    #- python-simplegeneric
-    #- python-wcwidth  # not blocking
-    #- python-prompt-toolkit
-    #- python-ipython_genutils
-    #- python-traitlets
-    #- python-pickleshare
-    #- python-backcall
-    #- python-cycler
-    #- python-pymongo
-    #- python-fastjsonschema
-    #- python-sphinxcontrib-github-alt
-    #- python-jupyter-core
-    #- python-nbformat
-    #- python-pandocfilters
-    #- python-orderedset
-    #- python-prometheus_client
-    #- python-send2trash
-    #- future
-    #- python-terminado
-    #- python-latexcodec
-    #- python-case
-    #- python-pybtex
-    #- python-pybtex-docutils
-    #- python-cppy
-    #- python-kiwisolver
-    #- python-PyPDF2
-    #- waf
-    #- python-sphinxcontrib-bibtex
-    #- python-scour
-    #- python-pytest-rerunfailures
-    #- python-readthedocs-sphinx-ext
-    #- python-sphinx_rtd_theme  # testfull, not blocking
-    #- python-jupyter-client:
+    - python-simplegeneric
+    - python-wcwidth  # not blocking
+    - python-prompt-toolkit
+    - python-ipython_genutils
+    - python-traitlets
+    - python-pickleshare
+    - python-backcall
+    - python-cycler
+    - python-pymongo
+    - python-fastjsonschema
+    - python-sphinxcontrib-github-alt
+    - python-jupyter-core
+    - python-nbformat
+    - python-pandocfilters
+    - python-orderedset
+    - python-prometheus_client
+    - python-send2trash
+    - future
+    - python-terminado
+    - python-latexcodec
+    - python-case
+    - python-pybtex
+    - python-pybtex-docutils
+    - python-cppy
+    - python-kiwisolver
+    - python-PyPDF2
+    - waf
+    - python-sphinxcontrib-bibtex
+    - python-scour
+    - python-pytest-rerunfailures
+    - python-readthedocs-sphinx-ext
+    - python-sphinx_rtd_theme  # testfull, not blocking
+    - python-jupyter-client:
+        macros:
+          _without_doc: 1
+          _without_tests: 1
+    - sip5
+    - python-wxpython4
+    - python-matplotlib:
+        macros:
+          _without_check: 1
+    - ipython:
+        macros:
+          _without_doc: 1
+          _without_check: 1
+    - python-matplotlib-inline
+    - python-sphinx-copybutton
+    - python-ipykernel:
+        macros:
+          _without_intersphinx: 1
+    - python-pandas
+
+    #- pybind11:  DONE
     #    macros:
-    #      _without_doc: 1
     #      _without_tests: 1
-    #- sip5
-    #- python-wxpython4
-    #- python-matplotlib:
-    #    macros:
-    #      _without_check: 1
-    #- ipython:
-    #    macros:
-    #      _without_doc: 1
-    #      _without_check: 1
-    #- python-matplotlib-inline
-    #- python-sphinx-copybutton
-    #- python-ipykernel:
-    #    macros:
-    #      _without_intersphinx: 1
-    #- python-pandas
-    #- pybind11:
-    #    macros:
-    #      _without_tests: 1
-    #- scipy  # try https://src.fedoraproject.org/rpms/scipy/pull-request/19 and adapt
+    - scipy  # try https://src.fedoraproject.org/rpms/scipy/pull-request/19 and adapt
     #- python-sphinx-gallery
     #- python-jupyterlab_pygments
     #- python-nbconvert:
