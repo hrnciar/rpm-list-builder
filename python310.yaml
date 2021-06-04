@@ -493,8 +493,8 @@ python310:
     #- python-simpleline
     #- abrt
     #- python-paste
-    - python-plaster-pastedeploy
-    - createrepo_c
+    #- python-plaster-pastedeploy
+    #- createrepo_c
 
     #- python-httplib2
     #- python-typing-extensions
@@ -599,7 +599,7 @@ python310:
     - python-setuptools  # testfull rebuild
     - python-urllib3  # testfull rebuild
 
-    #- python-simplegeneric
+    #- python-simplegeneric DONE
     #- python-wcwidth  # not blocking
     #- python-prompt-toolkit
     #- python-ipython_genutils
@@ -683,10 +683,10 @@ python310:
     #- python-jupyter-client  # docsfull, testfull, not blocking
     #- python-matplotlib
 
-    #- python-webob
-    - python-pyquery:
-        macros:
-          _without_tests: 1
+    #- python-webob DONE
+    #- python-pyquery:
+    #    macros:
+    #      _without_tests: 1
     - python-pylons-sphinx-themes
     - python-webtest
     - python-pyramid
