@@ -627,8 +627,8 @@ python310:
     #- python-cppy
     #- python-kiwisolver
     #- python-PyPDF2
-    - waf
-    - python-sphinxcontrib-bibtex
+    #- waf
+    #- python-sphinxcontrib-bibtex
     - python-scour
     - python-pytest-rerunfailures
     - python-readthedocs-sphinx-ext
@@ -706,7 +706,7 @@ python310:
     #- python-pycdlib
     #- python-keyring
     #- python-pep517
-    - python-tomlkit
+    #- python-tomlkit
     - python-lark-parser
     - python-poetry-core
     - python-sortedcontainers  # testfull, not blocking
@@ -759,9 +759,9 @@ python310:
     #- python-amqp
     #- python-nose-cover3
     #- python-billiard
-    - python-serpent
+    #- python-serpent
     #- python-pyro
-    - python-kombu
+    #- python-kombu
     - python-celery
     - python-crochet
     - fedora-messaging
