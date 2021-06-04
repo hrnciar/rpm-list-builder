@@ -674,17 +674,17 @@ python310:
     #- python-setuptools_scm_git_archive
     #- python-pikepdf
     #- python-argon2-cffi
-    - python-notebook
-    - python-ipywidgets
-    - python-xmltodict
-    - python-widgetsnbextension
-    - python-nbclient
-    - ipython  # docsfull, testfull, blocks
-    - python-pip  # testfull, not blocking
-    - python-jupyter-client  # docsfull, testfull, not blocking
-    - python-matplotlib  # testfull, not blocking
+    #- python-notebook
+    #- python-ipywidgets
+    #- python-xmltodict
+    #- python-widgetsnbextension
+    #- python-nbclient
+    #- ipython  # docsfull, testfull, blocks
+    #- python-pip  # testfull, not blocking
+    #- python-jupyter-client  # docsfull, testfull, not blocking
+    #- python-matplotlib  # testfull, not blocking
 
-    #- python-webob DONE
+    #- python-webob
     #- python-pyquery:
     #    macros:
     #      _without_tests: 1
@@ -740,9 +740,10 @@ python310:
     #- python-async-timeout  # not blocking
     #- python-click-completion
     #- libmodulemd
-    - python-gssapi
-    - python-requests-gssapi
-    - rpkg
+    #- python-gssapi
+    #- python-requests-gssapi
+    #- rpmlint  # XXX now newly is a regular Python package, BRs pytest flake8 :( -- I've tagged in the older version
+    #- rpkg
     - python-django
     - python3-openid
     - python-openid-cla
@@ -794,15 +795,15 @@ python310:
     - python-testtools  # not blocking
 
     # Don't forget to rebuild this later
-    - python-nbconvert  # not blocking #skipped
-    - python-cherrypy # testfull skipped
+    - python-nbconvert  # not blocking
+    - python-cherrypy # testfull, not blocking
     - xapian-bindings
-    - python-sphinxcontrib-websupport # with optional tests
-    - python-pyquery  # testfull rebuild after webtest, skipped, fails due to new version of libxml2
-    - python-hypothesis  # testfull, not blocking #skipped
+    - python-sphinxcontrib-websupport # with optional tests, not blocking
+    - python-pyquery  # testfull rebuild after webtest, not blocking
+    - python-hypothesis  # testfull, not blocking
+    - python-virtualenv  # with tests, not blocking, remove xonsh
     - bodhi #skipped
-    - fedpkg  # not blocking #skipped
-    - python-virtualenv  # with tests, remove xonsh
+    - fedpkg  # not blocking
 
     # additional bootstrap loops (isolated):
 
