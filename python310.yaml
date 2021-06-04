@@ -727,7 +727,7 @@ python310:
     #    macros:
     #      _without_tests: 1
     #- python-CacheControl
-    - python-pkginfo
+    #- python-pkginfo
     - python-SecretStorage
     - python-crashtest
     - python-clikit
@@ -845,8 +845,9 @@ python310:
     #- python-libcst # skipped -- XXX with tests later
 
     #- python-PyMySQL  DONE
-    - python-databases:  # bump release
-        macros:
-          _with_bootstrap: 1
-    - python-starlette
-    - python-databases
+    #- mkdocs  skipped, too many deps
+    #- python-databases:  # bump release  XXX pushed but fails
+    #    macros:
+    #      _with_bootstrap: 1
+    #- python-starlette
+    #- python-databases -- XXX without bootstrap later
