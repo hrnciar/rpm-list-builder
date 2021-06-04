@@ -833,9 +833,9 @@ python310:
     #- python-oletools # skipped
     #- python-pcodedmp # skipped -- XXX without bootstrap later
 
-    #- ara: # skipped
+    #- ara: # pushed
     #    replaced_macros:
-    #      _with_docs: 0
+    #      with_docs: 0
     #- ara
 
     #- python-libcst:  bumped, pushed
