@@ -748,8 +748,8 @@ python310:
     #- python3-openid
     #- python-openid-cla
     #- python-openid-teams
-    - python-pyramid-fas-openid
-    - python-fedora
+    #- python-pyramid-fas-openid
+    #- python-fedora
     - fedmsg
     - pungi
     - python-backoff
@@ -781,8 +781,8 @@ python310:
 
     #- python-requests  # testfull, not blocking
     #- python-numexpr
-    - python-tables
-    - python-numpydoc
+    #- python-tables
+    #- python-numpydoc
     - pybind11 # testfull, not blocking
     - python-sphinx-hoverxref
     - python-sphinx_selective_exclude
