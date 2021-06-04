@@ -632,13 +632,13 @@ python310:
     #- python-scour
     #- python-pytest-rerunfailures
     #- python-readthedocs-sphinx-ext
-    - python-sphinx_rtd_theme  # testfull, not blocking
-    - python-jupyter-client:
-        macros:
-          _without_doc: 1
-          _without_tests: 1
-    - sip5
-    - python-wxpython4
+    #- python-sphinx_rtd_theme  # testfull, not blocking
+    #- python-jupyter-client:
+    #    macros:
+    #      _without_doc: 1
+    #      _without_tests: 1
+    #- sip5
+    #- python-wxpython4
     - python-matplotlib:
         macros:
           _without_check: 1
@@ -709,15 +709,16 @@ python310:
     #- python-tomlkit
     #- python-lark-parser
     #- python-poetry-core
-    - python-sortedcontainers  # testfull, not blocking
+    - python-sortedcontainers  # testfull, not blocking XXX wait for matplotlib, already bumped pushed
     #- python-trio  # with tests
     #- python-pytest-trio
-    - python-jeepney
-    - python-shellingham
-    - python-msgpack
-    - python-zc-lockfile
-    - python-jaraco-classes
-    - python-jaraco-functools
+    #- python-jeepney
+    #- python-shellingham
+    #- python-msgpack
+    #- python-zc-lockfile
+    #- python-jaraco-classes
+    #- python-jaraco-functools
+    #- python-python-setuptools_scm_git_archive
     - python-cheroot
     - python-jaraco-collections
     - python-tempora
@@ -762,12 +763,12 @@ python310:
     #- python-serpent
     #- python-pyro
     #- python-kombu
-    - python-celery
-    - python-crochet
-    - fedora-messaging
-    - cloud-init  # not blocking
+    #- python-celery
+    #- python-crochet
+    #- fedora-messaging
+    #- cloud-init  # not blocking, fails
 
-    - python-smartcols
+    #- python-smartcols
     - fedmod
 
     ## this can run sooner
@@ -807,7 +808,7 @@ python310:
 
     # additional bootstrap loops (isolated):
 
-    #- python-zbase32:
+    #- python-zbase32:  DONE
     #    macros:
     #      _with_bootstrap: 1
     #- python-Traits:
@@ -815,34 +816,34 @@ python310:
     #      _with_bootstrap: 1
     #- pyutil
     #- python-zbase32
-    #- python-pyface
-    #- python-traitsui
-    #- python-Traits
+    - python-pyface
+    - python-traitsui
+    - python-Traits
 
-    #- python-lit:
+    #- python-lit:  DONE
     #    macros:
     #      _without_check: 1
-    #- python-lit
-    #- marshalparser DONE
-    #- clang
+    # - python-lit  DONE
+    #- marshalparser  DONE
+    #- clang  # XXX wait for https://bodhi.fedoraproject.org/updates/FEDORA-2021-f3add8dfd0
 
-    #- python-pypandoc
-    #- python-pcodedmp:
+    #- python-pypandoc  DONE
+    #- python-pcodedmp:  DONE
     #    macros:
     #      _with_bootstrap: 1
     #- python-oletools # skipped
-    #- python-pcodedmp # skipped
+    #- python-pcodedmp # skipped -- XXX without bootstrap later
 
     #- ara: # skipped
     #    replaced_macros:
     #      _with_docs: 0
     #- ara
 
-    #- python-libcst:
+    #- python-libcst:  bumped, pushed
     #    macros:
     #      _without_tests: 1
-    #- python-hypothesmith
-    #- python-libcst
+    #- python-hypothesmith # skipped
+    #- python-libcst # skipped -- XXX with tests later
 
     #- python-databases:  # bump release
     #    macros:
