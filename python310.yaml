@@ -806,6 +806,13 @@ python310:
     #- bodhi # some unracked deps are here, we let the mass rebuild handle it
     #- fedpkg  # not blocking, needs bodhi
 
+    ## remaining patched packages to be "corrected":
+    #- python-elementpath
+    #- python-filelock
+    #- python-iniconfig
+    #- python-invoke
+    #- python-jedi
+
     # additional bootstrap loops (isolated):
 
     #- python-zbase32:  DONE
