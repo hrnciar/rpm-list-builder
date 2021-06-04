@@ -536,14 +536,14 @@ python310:
     #- python-dns
     #- python-httpretty
     #- python-boto
-    - python-mypy_extensions
-    - python3-mypy
-    - python-rsa
-    - python-rfc3986
-    - python-h11
-    - python-httpx
-    - python-httpcore
-    - python-contextlib2
+    #- python-mypy_extensions
+    #- python3-mypy
+    #- python-rsa
+    #- python-rfc3986
+    #- python-h11
+    #- python-httpx
+    #- python-httpcore
+    #- python-contextlib2
     - python-vcrpy
 
     #- python-constantly
@@ -558,13 +558,13 @@ python310:
     #- python-productmd
     #- python-multilib
     #- python-kitchen
-    - lorax
-    - python3-py3dns
-    - python-pylibravatar
-    - python-pyroute2
-    - python-templated-dictionary
-    - mock
-    - python-responses
+    #- lorax
+    #- python3-py3dns
+    #- python-pylibravatar
+    #- python-pyroute2
+    #- python-templated-dictionary
+    #- mock
+    #- python-responses
 
     #- python-alembic
     #- python-defusedxml
@@ -576,24 +576,24 @@ python310:
     #- python-jaraco-envs
     #- python-twisted
     #- python-click-default-group
-    #- python-towncrier  # testfull rebuild, failed here XXX
+    #- python-towncrier  # testfull rebuild
     #- python-Automat  # testfull rebuild
     #- python-pygments-pytest
-    #- python-attrs  # testfull rebuild, not blocking (fails)
+    #- python-attrs  # testfull rebuild, not blocking
     #- python-invoke:
     #    macros:
     #      _without_tests: 1
     #- pytest # testfull rebuild
     #- kernel-tools  # python3-perf
-    - python-jsonschema  # testfull, not checked here
-    - python-txzmq
-    - python-txws
-    - python-beanbag
-    - pdc-client
-    - python-gevent
-    - libgit2-glib
+    #- python-jsonschema  # testfull, not blocking
+    #- python-txzmq
+    #- python-txws
+    #- python-beanbag
+    #- pdc-client
+    #- python-gevent
+    #- libgit2-glib
     #- python-testpath
-    - python-requests-download
+    #- python-requests-download
     - python-entrypoints
     - python-flit  # testfull
     - python-jaraco-path
@@ -614,13 +614,13 @@ python310:
     #- python-jupyter-core
     #- python-nbformat
     #- python-pandocfilters
-    - python-orderedset
-    - python-prometheus_client
-    - python-send2trash
-    - future
-    - python-terminado
-    - python-latexcodec
-    - python-case
+    #- python-orderedset
+    #- python-prometheus_client
+    #- python-send2trash
+    #- future
+    #- python-terminado
+    #- python-latexcodec
+    #- python-case
     - python-pybtex
     - python-pybtex-docutils
     - python-cppy
@@ -695,10 +695,10 @@ python310:
     #- python-cornice-sphinx
     #- python3-pytest-asyncio
     #- python-asgiref
-    - kobo
-    - python-moksha-common
-    - python-moksha-hub
-    - python-pyramid-mako
+    #- kobo
+    #- python-moksha-common
+    #- python-moksha-hub
+    #- python-pyramid-mako
     - pydot
     - python-sqlalchemy_schemadisplay
     - python-pika
@@ -773,8 +773,8 @@ python310:
     #- mpich DONE
     #- python-dill DONE
     #- mpi4py DONE
+    #- boost  # not blocking DONE
     #- vtk  # https://bugzilla.redhat.com/show_bug.cgi?id=1902729
-    - boost  # not blocking
 
     #- python-requests  # testfull, not blocking
     #- python-numexpr
@@ -812,7 +812,6 @@ python310:
     #      _with_bootstrap: 1
     #- pyutil
     #- python-zbase32
-    #TODO: loop between pyface & traitsui
     #- python-pyface
     #- python-traitsui
     #- python-Traits
