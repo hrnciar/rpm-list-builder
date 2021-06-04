@@ -752,8 +752,8 @@ python310:
     #- python-fedora
     #- fedmsg
     #- pungi
-    - python-backoff
-    - libsolv
+    #- python-backoff
+    - libsolv  -- s390x outage
 
     #- python-vine DONE
     #- python-amqp
@@ -768,7 +768,7 @@ python310:
     #- cloud-init  # not blocking, fails
 
     #- python-smartcols
-    - fedmod  # XXX libsolv
+    - fedmod  -- XXX libsolv
 
     ## this can run sooner
     #- gdb  # not blocking XXX wait for maintainers
@@ -787,23 +787,24 @@ python310:
     #- python-sphinx-hoverxref
     #- python-sphinx_selective_exclude
 
-    - linkchecker
-    - python-ipykernel
-    - python-Bottleneck
-    - python-docs-theme
-    - python3-docs # updated! no need to bump
-    - python-testtools  # not blocking
+    #- linkchecker
+    #- python-ipykernel
+    - python-Bottleneck -- s390x outage
+    #- python-docs-theme
+    #- python3-docs # updated! no need to bump
+    #- python-testtools  # not blocking
 
     # Don't forget to rebuild this later
-    - python-nbconvert  # not blocking
-    - python-cherrypy # testfull, not blocking
-    - xapian-bindings
-    - python-sphinxcontrib-websupport # with optional tests, not blocking
-    - python-pyquery  # testfull rebuild after webtest, not blocking
-    - python-hypothesis  # testfull, not blocking
-    - python-virtualenv  # with tests, not blocking, remove xonsh
-    - bodhi #skipped
-    - fedpkg  # not blocking
+    #- python-nbconvert  # not blocking
+    #- python-cherrypy # testfull, not blocking
+    #- python-pyquery  # testfull rebuild after webtest, not blocking
+    #- python-hypothesis  # testfull, not blocking
+    #- python-virtualenv  # with tests, not blocking, remove xonsh
+    - xapian-bindings -- s390x outage
+    - python-sphinxcontrib-websupport # with optional tests, not blocking, needs xapian-bindings
+
+    #- bodhi # some unracked deps are here, we let the mass rebuild handle it
+    #- fedpkg  # not blocking, needs bodhi
 
     # additional bootstrap loops (isolated):
 
@@ -824,7 +825,7 @@ python310:
     #      _without_check: 1
     # - python-lit  DONE
     #- marshalparser  DONE
-    #- clang  # XXX tagged in llvm-12.0.1~rc1-1.fc35 from https://bodhi.fedoraproject.org/updates/FEDORA-2021-f3add8dfd0
+    #- clang  # XXX tagged in llvm-12.0.1~rc1-1.fc35 / s390x outage
 
     #- python-pypandoc  DONE
     #- python-pcodedmp:  DONE
