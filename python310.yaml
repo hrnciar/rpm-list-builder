@@ -459,15 +459,13 @@ python310:
     #- python-markdown-it-py
     #- python-mdit-py-plugins
     #- python-myst-parser
-    - python-sphinx-copybutton
-    - python-pip  # testfull rebuild, wait for breezy, not blocking
     #- python-path
     #- python-termcolor
     #- python-pytest-shutil
-    - python-openstackdocstheme
-    - python-zope-exceptions
-    - python-zope-schema
-    - python-zope-configuration
+    #- python-openstackdocstheme
+    #- python-zope-exceptions
+    #- python-zope-schema
+    #- python-zope-configuration
 
     - python-mccabe
     - python-pycodestyle
@@ -677,8 +675,10 @@ python310:
     #- python-xmltodict
     #- python-widgetsnbextension
     #- python-nbclient
-    #- ipython  # docsfull, testfull
-    #- python-jupyter-client  # docsfull, testfull
+    #- ipython  # docsfull, testfull, blocks
+    #- python-sphinx-copybutton   XXXX already bumped and pushed
+    #- python-pip  # testfull, not blocking   XXXX already bumped and pushed
+    #- python-jupyter-client  # docsfull, testfull, not blocking
     #- python-matplotlib
 
     #- python-webob
