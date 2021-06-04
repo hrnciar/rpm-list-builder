@@ -476,8 +476,8 @@ python310:
     #- python-extras  # not blocking
     #- python-httpbin
     #- python-pytest-httpbin
-    - python-ldap
-    - rpmconf
+    #- python-ldap
+    #- rpmconf
 
     #- python-pyrsistent
     #- python-feedgen
@@ -486,13 +486,13 @@ python310:
     #- python-jinja2  # not blocking
     #- pyxdg
     #- libreport
-    - python-meh
-    - anaconda
-    - koji
-    - dnf-plugins-extras
-    - python-simpleline
-    - abrt
-    - python-paste
+    #- python-meh
+    #- anaconda
+    #- koji
+    #- dnf-plugins-extras
+    #- python-simpleline
+    #- abrt
+    #- python-paste
     - python-plaster-pastedeploy
     - createrepo_c
 
@@ -517,16 +517,16 @@ python310:
     #- python-botocore
     #- python-s3transfer
     #- python-boto3
-    - python-async-timeout:
-        macros:
-          _without_tests: 1
-    - python-aiohttp
-    - python-monotonic
-    - python-betamax
-    - python-async-generator
-    - python-outcome
-    - python-curio
-    - python-sniffio
+    #- python-async-timeout:
+    #    macros:
+    #      _without_tests: 1
+    #- python-aiohttp
+    #- python-monotonic
+    #- python-betamax
+    #- python-async-generator
+    #- python-outcome
+    #- python-curio
+    #- python-sniffio
     - python-dogpile-cache
     - python-requests-toolbelt
     - python-trustme
@@ -546,16 +546,16 @@ python310:
     - python-contextlib2
     - python-vcrpy
 
-    - python-constantly
-    - python-hyperframe
-    - python-h2
-    - python-priority  # test_period_of_repetition flaky in copr (timeouts)
-    - python-graphviz
-    - python-Automat:
-        macros:
-          _without_tests: 1
-    - python-munch
-    - python-productmd
+    #- python-constantly
+    #- python-hyperframe
+    #- python-h2
+    #- python-priority  # test_period_of_repetition flaky in copr (timeouts)
+    #- python-graphviz
+    #- python-Automat:
+    #    macros:
+    #      _without_tests: 1
+    #- python-munch
+    #- python-productmd
     - python-multilib
     - python-kitchen
     - lorax
@@ -565,49 +565,50 @@ python310:
     - python-templated-dictionary
     - mock
     - python-responses
-    #- python-alembic  # https://src.fedoraproject.org/rpms/python-alembic/pull-request/11
+
+    #- python-alembic
     #- python-defusedxml
     #- python-pytest-fixture-config
     #- python-pytest-virtualenv
     #- python-jaraco-packaging
     #- python-pathspec
-    #- python-rst-linker
-    #- python-jaraco-envs
-    #- python-twisted
-    #- python-towncrier  # testfull rebuild, untested here
-    #- python-Automat  # testfull rebuild
-    #- python-pygments-pytest
-    #- python-attrs  # testfull rebuild, not blocking (fails)
-    #- python-invoke:
-    #    macros:
-    #      _without_tests: 1
-    #- pytest # testfull rebuild
-    #- kernel-tools  # python3-perf
-    #- python-jsonschema  # testfull, not checked here
-    #- python-txzmq
-    #- python-txws
-    #- python-beanbag
-    #- pdc-client
-    #- python-gevent
-    #- libgit2-glib
-    #- python-testpath
-    #- python-requests-download
-    #- python-entrypoints
-    #- python-flit  # testfull
-    #- python-jaraco-path
-    #- python-setuptools  # testfull rebuild
-    #- python-urllib3  # testfull rebuild
+    - python-rst-linker
+    - python-jaraco-envs
+    - python-twisted
+    - python-towncrier  # testfull rebuild, untested here
+    - python-Automat  # testfull rebuild
+    - python-pygments-pytest
+    - python-attrs  # testfull rebuild, not blocking (fails)
+    - python-invoke:
+        macros:
+          _without_tests: 1
+    - pytest # testfull rebuild
+    - kernel-tools  # python3-perf
+    - python-jsonschema  # testfull, not checked here
+    - python-txzmq
+    - python-txws
+    - python-beanbag
+    - pdc-client
+    - python-gevent
+    - libgit2-glib
+    - python-testpath
+    - python-requests-download
+    - python-entrypoints
+    - python-flit  # testfull
+    - python-jaraco-path
+    - python-setuptools  # testfull rebuild
+    - python-urllib3  # testfull rebuild
 
     #- python-simplegeneric
     #- python-wcwidth  # not blocking
-    - python-prompt-toolkit
-    - python-ipython_genutils
-    - python-traitlets
-    - python-pickleshare
-    - python-backcall
-    - python-cycler
-    - python-pymongo
-    - python-fastjsonschema
+    #- python-prompt-toolkit
+    #- python-ipython_genutils
+    #- python-traitlets
+    #- python-pickleshare
+    #- python-backcall
+    #- python-cycler
+    #- python-pymongo
+    #- python-fastjsonschema
     - python-sphinxcontrib-github-alt
     - python-jupyter-core
     - python-nbformat
@@ -653,7 +654,7 @@ python310:
     #- pybind11:  DONE
     #    macros:
     #      _without_tests: 1
-    - scipy  # try https://src.fedoraproject.org/rpms/scipy/pull-request/19 and adapt
+    #- scipy  DONE
     #- python-sphinx-gallery
     #- python-jupyterlab_pygments
     #- python-nbconvert:
@@ -683,95 +684,95 @@ python310:
     #- python-matplotlib
 
     #- python-webob
-    #- python-pyquery:
-    #    macros:
-    #      _without_tests: 1
-    #- python-pylons-sphinx-themes
-    #- python-webtest
-    #- python-pyramid
-    #- python-cornice
-    #- python-cornice-sphinx
-    #- python3-pytest-asyncio
-    #- python-asgiref
-    #- kobo
-    #- python-moksha-common
-    #- python-moksha-hub
-    #- python-pyramid-mako
-    #- pydot
-    #- python-sqlalchemy_schemadisplay
-    #- python-pika
-    #- python-pycdlib
-    #- python-keyring
-    #- python-pep517
-    #- python-tomlkit
-    #- python-lark-parser
-    #- python-poetry-core
-    #- python-sortedcontainers  # testfull, not blocking
-    #- python-trio #with tests
-    #- python-pytest-trio
-    #- python-jeepney
-    #- python-shellingham
-    #- python-msgpack
-    #- python-zc-lockfile
-    #- python-jaraco-classes
-    #- python-jaraco-functools
-    #- python-cheroot
-    #- python-jaraco-collections
-    #- python-tempora
-    #- python-portend
-    #- python-jaraco-text
-    #- python-cherrypy:
-    #    macros:
-    #      _without_tests: 1
-    #- python-CacheControl
-    #- python-pkginfo
-    #- python-SecretStorage
-    #- python-crashtest
-    #- python-clikit
-    #- python-cachy
-    #- python-cleo
-    #- python-pastel
-    #- python-pylev
-    #- poetry
-    #- python-dict-sorted
-    #- python-pytest-aiohttp
-    #- python-async-timeout  # not blocking
-    #- python-click-completion
-    #- libmodulemd
-    #- python-gssapi
-    #- python-requests-gssapi
-    #- rpkg
-    #- python-django
-    #- python3-openid
-    #- python-openid-cla
-    #- python-openid-teams
-    #- python-pyramid-fas-openid
-    #- python-fedora
-    #- fedmsg
-    #- pungi
-    #- python-backoff
-    #- libsolv
+    - python-pyquery:
+        macros:
+          _without_tests: 1
+    - python-pylons-sphinx-themes
+    - python-webtest
+    - python-pyramid
+    - python-cornice
+    - python-cornice-sphinx
+    - python3-pytest-asyncio
+    - python-asgiref
+    - kobo
+    - python-moksha-common
+    - python-moksha-hub
+    - python-pyramid-mako
+    - pydot
+    - python-sqlalchemy_schemadisplay
+    - python-pika
+    - python-pycdlib
+    - python-keyring
+    - python-pep517
+    - python-tomlkit
+    - python-lark-parser
+    - python-poetry-core
+    - python-sortedcontainers  # testfull, not blocking
+    - python-trio #with tests
+    - python-pytest-trio
+    - python-jeepney
+    - python-shellingham
+    - python-msgpack
+    - python-zc-lockfile
+    - python-jaraco-classes
+    - python-jaraco-functools
+    - python-cheroot
+    - python-jaraco-collections
+    - python-tempora
+    - python-portend
+    - python-jaraco-text
+    - python-cherrypy:
+        macros:
+          _without_tests: 1
+    - python-CacheControl
+    - python-pkginfo
+    - python-SecretStorage
+    - python-crashtest
+    - python-clikit
+    - python-cachy
+    - python-cleo
+    - python-pastel
+    - python-pylev
+    - poetry
+    - python-dict-sorted
+    - python-pytest-aiohttp
+    - python-async-timeout  # not blocking
+    - python-click-completion
+    - libmodulemd
+    - python-gssapi
+    - python-requests-gssapi
+    - rpkg
+    - python-django
+    - python3-openid
+    - python-openid-cla
+    - python-openid-teams
+    - python-pyramid-fas-openid
+    - python-fedora
+    - fedmsg
+    - pungi
+    - python-backoff
+    - libsolv
 
-    #- python-vine
-    #- python-amqp
-    #- python-nose-cover3
-    #- python-billiard
-    #- python-kombu
-    #- python-celery
-    #- python-crochet
-    #- fedora-messaging
-    #- cloud-init  # not blocking #skipped
+    - python-vine
+    - python-amqp
+    - python-nose-cover3
+    - python-billiard
+    - python-kombu
+    - python-celery
+    - python-crochet
+    - fedora-messaging
+    - cloud-init  # not blocking
 
-    #- python-smartcols
-    #- fedmod
+    - python-smartcols
+    - fedmod
 
     ## this can run sooner
     #- gdb  # not blocking
-    #- openmpi
-    #- mpich
-    #- python-dill
-    #- mpi4py
-    #- vtk
+    #- openmpi DONE
+    - mpich
+    - python-dill
+    - mpi4py
+    #- vtk  # https://bugzilla.redhat.com/show_bug.cgi?id=1902729
     #- boost  # not blocking
 
     #- python-requests  # testfull, not blocking
