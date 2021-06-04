@@ -475,7 +475,7 @@ python310:
     #- python-astroid
     #- python-extras  # not blocking
     #- python-httpbin
-    - python-pytest-httpbin
+    #- python-pytest-httpbin
     - python-ldap
     - rpmconf
 
@@ -485,7 +485,7 @@ python310:
     #- python-transaction
     #- python-jinja2  # not blocking
     #- pyxdg
-    - libreport
+    #- libreport
     - python-meh
     - anaconda
     - koji
@@ -502,7 +502,7 @@ python310:
     #- python-hupper
     #- subunit
     #- python-testrepository
-    - python-stevedore
+    #- python-stevedore
 
     #- python-hyperlink
     #- python-hamcrest
@@ -516,7 +516,7 @@ python310:
     #- python-jmespath
     #- python-botocore
     #- python-s3transfer
-    - python-boto3
+    #- python-boto3
     - python-async-timeout:
         macros:
           _without_tests: 1
@@ -598,8 +598,8 @@ python310:
     #- python-setuptools  # testfull rebuild
     #- python-urllib3  # testfull rebuild
 
-    - python-simplegeneric
-    - python-wcwidth  # not blocking
+    #- python-simplegeneric
+    #- python-wcwidth  # not blocking
     - python-prompt-toolkit
     - python-ipython_genutils
     - python-traitlets
