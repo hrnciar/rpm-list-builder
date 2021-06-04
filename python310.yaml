@@ -446,23 +446,24 @@ python310:
     #- python-certifi
     #- python-spec
     #- python-lexicon
-    - python-should_dsl
-    - python-fluidity-sm
-    - python-pynacl
-    - python-flit:
-        macros:
-         _without_tests: 1
-    - python-sphinx-inline-tabs
-    - breezy  # only blocks pip
-    - python-patiencediff
-    - python-paramiko
-    - python-markdown-it-py
-    - python-mdit-py-plugins
-    - python-myst-parser
+    #- python-should_dsl
+    #- python-fluidity-sm
+    #- python-pynacl
+    #- python-flit:
+    #    macros:
+    #     _without_tests: 1
+    #- python-sphinx-inline-tabs
+    #- breezy  # only blocks pip
+    #- python-patiencediff
+    #- python-paramiko
+    #- python-markdown-it-py
+    #- python-mdit-py-plugins
+    #- python-myst-parser
+    - python-sphinx-copybutton
     - python-pip  # testfull rebuild, wait for breezy, not blocking
-    - python-path
-    - python-termcolor
-    - python-pytest-shutil
+    #- python-path
+    #- python-termcolor
+    #- python-pytest-shutil
     - python-openstackdocstheme
     - python-zope-exceptions
     - python-zope-schema
