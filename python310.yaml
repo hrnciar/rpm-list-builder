@@ -663,10 +663,10 @@ python310:
     #    macros:
     #      _without_doc: 1
     #      _without_check: 1
-    - python-nest_asyncio
-    - python-nbclient:
-        macros:
-          _without_check: 1
+    #- python-nest_asyncio
+    #- python-nbclient:
+    #    macros:
+    #      _without_check: 1
     - python-sphinx-last-updated-by-git
     - python-sphinxcontrib-svg2pdfconverter
     - python-nbsphinx
@@ -730,8 +730,8 @@ python310:
     #- python-pkginfo
     #- python-SecretStorage
     #- python-crashtest
-    - python-clikit
-    - python-cachy
+    #- python-clikit
+    #- python-cachy
     - python-cleo
     - python-pastel
     - python-pylev
