@@ -1,0 +1,10 @@
+diff --git a/python-jupyter-client.spec b/python-jupyter-client.spec
+index 668ebea..e644f2a 100644
+--- a/python-jupyter-client.spec
++++ b/python-jupyter-client.spec
+@@ -1,3 +1,5 @@
++%global _without_tests 1
++%global _without_doc 1
+ %global pypi_name jupyter_client
+ %global pypi_name_dash jupyter-client
+ 
