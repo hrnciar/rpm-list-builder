@@ -751,7 +751,7 @@ python310:
     #- python-pyramid-fas-openid
     #- python-fedora
     #- fedmsg
-    - pungi
+    #- pungi
     - python-backoff
     - libsolv
 
@@ -785,7 +785,7 @@ python310:
     #- python-numpydoc
     #- pybind11 # testfull, not blocking
     #- python-sphinx-hoverxref
-    - python-sphinx_selective_exclude
+    #- python-sphinx_selective_exclude
 
     - linkchecker
     - python-ipykernel
