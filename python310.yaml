@@ -667,20 +667,20 @@ python310:
     #- python-nbclient:
     #    macros:
     #      _without_check: 1
-    - python-sphinx-last-updated-by-git
-    - python-sphinxcontrib-svg2pdfconverter
-    - python-nbsphinx
-    - python-xmp-toolkit
-    - python-setuptools_scm_git_archive
-    - python-pikepdf
-    - python-argon2-cffi
+    #- python-sphinx-last-updated-by-git
+    #- python-sphinxcontrib-svg2pdfconverter
+    #- python-nbsphinx
+    #- python-xmp-toolkit
+    #- python-setuptools_scm_git_archive
+    #- python-pikepdf
+    #- python-argon2-cffi
     - python-notebook
     - python-ipywidgets
     - python-xmltodict
     - python-widgetsnbextension
     - python-nbclient
     - ipython  # docsfull, testfull, blocks
-    - python-pip  # testfull, not blocking   XXXX already bumped and pushed
+    - python-pip  # testfull, not blocking
     - python-jupyter-client  # docsfull, testfull, not blocking
     - python-matplotlib  # testfull, not blocking
 
@@ -717,7 +717,6 @@ python310:
     #- python-zc-lockfile
     #- python-jaraco-classes
     #- python-jaraco-functools
-    #- python-python-setuptools_scm_git_archive
     #- python-cheroot
     #- python-jaraco-collections
     #- python-tempora
@@ -732,15 +731,15 @@ python310:
     #- python-crashtest
     #- python-clikit
     #- python-cachy
-    - python-cleo
-    - python-pastel
-    - python-pylev
-    - poetry
-    - python-dict-sorted
-    - python-pytest-aiohttp
-    - python-async-timeout  # not blocking
-    - python-click-completion
-    - libmodulemd
+    #- python-cleo
+    #- python-pastel
+    #- python-pylev
+    #- poetry
+    #- python-dict-sorted
+    #- python-pytest-aiohttp
+    #- python-async-timeout  # not blocking
+    #- python-click-completion
+    #- libmodulemd
     - python-gssapi
     - python-requests-gssapi
     - rpkg
@@ -798,7 +797,7 @@ python310:
     - python-nbconvert  # not blocking #skipped
     - python-cherrypy # testfull skipped
     - xapian-bindings
-    - python-sphinxcontrib-websupport #with tests
+    - python-sphinxcontrib-websupport # with optional tests
     - python-pyquery  # testfull rebuild after webtest, skipped, fails due to new version of libxml2
     - python-hypothesis  # testfull, not blocking #skipped
     - bodhi #skipped
@@ -810,7 +809,7 @@ python310:
     #- python-zbase32:  DONE
     #    macros:
     #      _with_bootstrap: 1
-    #- python-Traits:
+    #- python-Traits:  DONE
     #    macros:
     #      _with_bootstrap: 1
     #- pyutil
