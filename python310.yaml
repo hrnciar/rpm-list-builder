@@ -544,7 +544,7 @@ python310:
     #- python-httpx
     #- python-httpcore
     #- python-contextlib2
-    - python-vcrpy
+    #- python-vcrpy
 
     #- python-constantly
     #- python-hyperframe
@@ -594,10 +594,11 @@ python310:
     #- libgit2-glib
     #- python-testpath
     #- python-requests-download
-    - python-entrypoints
-    - python-flit  # testfull
-    - python-jaraco-path
-    - python-setuptools  # testfull rebuild
+    #- python-entrypoints
+    #- python-flit  # testfull
+    #- python-jaraco-path
+    #- python-setuptools  # testfull rebuild
+    #- python-pytest-freezegun
     - python-urllib3  # testfull rebuild
 
     #- python-simplegeneric DONE
@@ -621,9 +622,9 @@ python310:
     #- python-terminado
     #- python-latexcodec
     #- python-case
-    - python-pybtex
-    - python-pybtex-docutils
-    - python-cppy
+    #- python-pybtex
+    #- python-pybtex-docutils
+    #- python-cppy
     - python-kiwisolver
     - python-PyPDF2
     - waf
@@ -699,9 +700,9 @@ python310:
     #- python-moksha-common
     #- python-moksha-hub
     #- python-pyramid-mako
-    - pydot
-    - python-sqlalchemy_schemadisplay
-    - python-pika
+    #- pydot
+    #- python-sqlalchemy_schemadisplay
+    #- python-pika
     - python-pycdlib
     - python-keyring
     - python-pep517
@@ -754,10 +755,10 @@ python310:
     - python-backoff
     - libsolv
 
-    - python-vine
-    - python-amqp
-    - python-nose-cover3
-    - python-billiard
+    #- python-vine
+    #- python-amqp
+    #- python-nose-cover3
+    #- python-billiard
     - python-kombu
     - python-celery
     - python-crochet
@@ -820,7 +821,7 @@ python310:
     #    macros:
     #      _without_check: 1
     #- python-lit
-    #- marshalparser
+    #- marshalparser DONE
     #- clang
 
     #- python-pypandoc
