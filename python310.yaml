@@ -651,18 +651,18 @@ python310:
     #- python-ipykernel:
     #    macros:
     #      _without_intersphinx: 1
-    - python-pandas
+    #- python-pandas
 
-    #- pybind11:  DONE
+    #- pybind11:
     #    macros:
     #      _without_tests: 1
-    #- scipy  DONE
-    - python-sphinx-gallery
-    - python-jupyterlab_pygments
-    - python-nbconvert:
-        macros:
-          _without_doc: 1
-          _without_check: 1
+    #- scipy
+    #- python-sphinx-gallery
+    #- python-jupyterlab_pygments
+    #- python-nbconvert:
+    #    macros:
+    #      _without_doc: 1
+    #      _without_check: 1
     - python-nest_asyncio
     - python-nbclient:
         macros:
@@ -728,8 +728,8 @@ python310:
     #      _without_tests: 1
     #- python-CacheControl
     #- python-pkginfo
-    - python-SecretStorage
-    - python-crashtest
+    #- python-SecretStorage
+    #- python-crashtest
     - python-clikit
     - python-cachy
     - python-cleo
@@ -779,31 +779,31 @@ python310:
     #- boost  # not blocking DONE
     #- vtk  # https://bugzilla.redhat.com/show_bug.cgi?id=1902729
 
-    #- python-requests  # testfull, not blocking
-    #- python-numexpr
-    #- python-tables
-    #- python-numpydoc
-    #- pybind11 # testfull, not blocking
-    #- python-sphinx-hoverxref
-    #- python-sphinx_selective_exclude
+    - python-requests  # testfull, not blocking
+    - python-numexpr
+    - python-tables
+    - python-numpydoc
+    - pybind11 # testfull, not blocking
+    - python-sphinx-hoverxref
+    - python-sphinx_selective_exclude
 
-    #- linkchecker
-    #- python-ipykernel
-    #- python-Bottleneck
-    #- python-docs-theme
-    #- python3-docs # updated! no need to bump
-    #- python-testtools
+    - linkchecker
+    - python-ipykernel
+    - python-Bottleneck
+    - python-docs-theme
+    - python3-docs # updated! no need to bump
+    - python-testtools  # not blocking
 
     # Don't forget to rebuild this later
-    #- python-nbconvert  # not blocking #skipped
-    #- python-cherrypy # testfull skipped
-    #- xapian-bindings
-    #- python-sphinxcontrib-websupport #with tests
-    #- python-pyquery  # testfull rebuild after webtest, skipped, fails due to new version of libxml2
-    #- python-hypothesis  # testfull, not blocking #skipped
-    #- bodhi #skipped
-    #- fedpkg  # not blocking #skipped
-    #- python-virtualenv  # with tests, remove xonsh
+    - python-nbconvert  # not blocking #skipped
+    - python-cherrypy # testfull skipped
+    - xapian-bindings
+    - python-sphinxcontrib-websupport #with tests
+    - python-pyquery  # testfull rebuild after webtest, skipped, fails due to new version of libxml2
+    - python-hypothesis  # testfull, not blocking #skipped
+    - bodhi #skipped
+    - fedpkg  # not blocking #skipped
+    - python-virtualenv  # with tests, remove xonsh
 
     # additional bootstrap loops (isolated):
 
@@ -815,7 +815,7 @@ python310:
     #      _with_bootstrap: 1
     #- pyutil
     #- python-zbase32
-    #- python-pyface
+    #- python-pyface  DONE
     #- python-traitsui  pushed, but fails
     #- python-Traits   --- XXXX without bootstrap later
 
