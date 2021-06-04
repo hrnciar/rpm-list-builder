@@ -599,9 +599,9 @@ python310:
     #- python-jaraco-path
     #- python-setuptools  # testfull rebuild
     #- python-pytest-freezegun
-    - python-urllib3  # testfull rebuild
+    #- python-urllib3  # testfull rebuild
 
-    #- python-simplegeneric DONE
+    #- python-simplegeneric
     #- python-wcwidth  # not blocking
     #- python-prompt-toolkit
     #- python-ipython_genutils
@@ -625,7 +625,7 @@ python310:
     #- python-pybtex
     #- python-pybtex-docutils
     #- python-cppy
-    - python-kiwisolver
+    #- python-kiwisolver
     - python-PyPDF2
     - waf
     - python-sphinxcontrib-bibtex
@@ -703,7 +703,7 @@ python310:
     #- pydot
     #- python-sqlalchemy_schemadisplay
     #- python-pika
-    - python-pycdlib
+    #- python-pycdlib
     - python-keyring
     - python-pep517
     - python-tomlkit
@@ -759,6 +759,7 @@ python310:
     #- python-amqp
     #- python-nose-cover3
     #- python-billiard
+    - python-pyro
     - python-kombu
     - python-celery
     - python-crochet
