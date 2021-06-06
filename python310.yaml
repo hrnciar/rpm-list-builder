@@ -742,7 +742,7 @@ python310:
     #- libmodulemd
     #- python-gssapi
     #- python-requests-gssapi
-    #- rpmlint  # XXX now newly is a regular Python package, BRs pytest flake8 :( -- I've tagged in the older version
+    #- rpmlint  # now newly is a regular Python package, has new deps, investigate
     #- rpkg
     #- python-django
     #- python3-openid
@@ -753,9 +753,9 @@ python310:
     #- fedmsg
     #- pungi
     #- python-backoff
-    - libsolv  -- s390x outage
+    #- libsolv
 
-    #- python-vine DONE
+    #- python-vine
     #- python-amqp
     #- python-nose-cover3
     #- python-billiard
@@ -768,15 +768,15 @@ python310:
     #- cloud-init  # not blocking, fails
 
     #- python-smartcols
-    - fedmod  -- XXX libsolv
+    #- fedmod
 
     ## this can run sooner
-    #- gdb  # not blocking XXX wait for maintainers
-    #- openmpi DONE
-    #- mpich DONE
-    #- python-dill DONE
-    #- mpi4py DONE
-    #- boost  # not blocking DONE
+    #- gdb  # not blocking
+    #- openmpi
+    #- mpich
+    #- python-dill
+    #- mpi4py
+    #- boost  # not blocking
     #- vtk  # https://bugzilla.redhat.com/show_bug.cgi?id=1902729
 
     #- python-requests  # testfull, not blocking
@@ -789,7 +789,6 @@ python310:
 
     #- linkchecker
     #- python-ipykernel
-    - python-Bottleneck -- s390x outage
     #- python-docs-theme
     #- python3-docs # updated! no need to bump
     #- python-testtools  # not blocking
@@ -800,8 +799,8 @@ python310:
     #- python-pyquery  # testfull rebuild after webtest, not blocking
     #- python-hypothesis  # testfull, not blocking
     #- python-virtualenv  # with tests, not blocking, remove xonsh
-    - xapian-bindings -- s390x outage
-    - python-sphinxcontrib-websupport # with optional tests, not blocking, needs xapian-bindings
+    #- xapian-bindings
+    #- python-sphinxcontrib-websupport # with optional tests, not blocking
 
     #- bodhi # some unracked deps are here, we let the mass rebuild handle it
     #- fedpkg  # not blocking, needs bodhi
@@ -815,31 +814,31 @@ python310:
 
     # additional bootstrap loops (isolated):
 
-    #- python-zbase32:  DONE
+    #- python-zbase32:
     #    macros:
     #      _with_bootstrap: 1
-    #- python-Traits:  DONE
+    #- python-Traits:
     #    macros:
     #      _with_bootstrap: 1
     #- pyutil
     #- python-zbase32
-    #- python-pyface  DONE
-    #- python-traitsui  pushed, but fails
-    #- python-Traits   --- XXXX without bootstrap later
+    #- python-pyface
+    #- python-traitsui
+    #- python-Traits
 
-    #- python-lit:  DONE
+    #- python-lit:
     #    macros:
     #      _without_check: 1
-    # - python-lit  DONE
-    #- marshalparser  DONE
-    #- clang  # XXX tagged in llvm-12.0.1~rc1-1.fc35 / s390x outage
+    # - python-lit
+    #- marshalparser
+    #- clang
 
-    #- python-pypandoc  DONE
-    #- python-pcodedmp:  DONE
+    #- python-pypandoc
+    #- python-pcodedmp:
     #    macros:
     #      _with_bootstrap: 1
     #- python-oletools # skipped
-    #- python-pcodedmp # skipped -- XXX without bootstrap later
+    #- python-pcodedmp # skipped
 
     #- ara: # pushed
     #    replaced_macros:
@@ -850,12 +849,12 @@ python310:
     #    macros:
     #      _without_tests: 1
     #- python-hypothesmith # skipped
-    #- python-libcst # skipped -- XXX with tests later
+    #- python-libcst # skipped
 
-    #- python-PyMySQL  DONE
+    #- python-PyMySQL
     #- mkdocs  skipped, too many deps
-    #- python-databases:  # bump release  XXX pushed but fails
+    #- python-databases:  # bump release
     #    macros:
     #      _with_bootstrap: 1
     #- python-starlette
-    #- python-databases -- XXX without bootstrap later
+    #- python-databases
