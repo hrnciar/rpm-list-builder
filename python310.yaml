@@ -814,6 +814,12 @@ python310:
 
     # additional bootstrap loops (isolated):
 
+    #- freeipa-healthcheck:
+    #    macros:
+    #      _without_tests: 1
+    #- pki-core  # other deps not checked here
+    #- freeipa-healthcheck
+
     #- python-zbase32:
     #    macros:
     #      _with_bootstrap: 1
