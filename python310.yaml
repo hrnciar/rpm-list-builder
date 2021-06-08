@@ -864,3 +864,10 @@ python310:
     #      _with_bootstrap: 1
     #- python-starlette
     #- python-databases
+
+    #- python-molecule:
+    #    macros:
+    #      _without_doc: 1
+    #- python-molecule-docker
+    #- python-molecule-podman
+    #- python-molecule
