@@ -805,6 +805,16 @@ python310:
     #- bodhi # some unracked deps are here, we let the mass rebuild handle it
     #- fedpkg  # not blocking, needs bodhi
 
+    ## TODO have the full freeipa stack in the bootstrap sequence for Python 3.11
+    #- mod_wsgi  # this package is a blocker for freeipa-server
+    #- ... # other deps and freeipa components not checked here
+    #- freeipa-healthcheck:
+    #    macros:
+    #      _without_tests: 1
+    #- pki-core
+    #- freeipa-healthcheck
+    ## assert freeipa-server is installable
+
     ## remaining patched packages to be "corrected":
     #- python-elementpath
     #- python-filelock
@@ -814,11 +824,6 @@ python310:
 
     # additional bootstrap loops (isolated):
 
-    #- freeipa-healthcheck:
-    #    macros:
-    #      _without_tests: 1
-    #- pki-core  # other deps not checked here
-    #- freeipa-healthcheck
 
     #- python-zbase32:
     #    macros:
